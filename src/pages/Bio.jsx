@@ -5,7 +5,7 @@ import ChevronNav from "../components/ChevronNav";
 export default function Bio() {
   const gridItems = [
     { id: 1, number: "12+", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Total Years of Professional Experience</h2><ul className="text-xl text-white/70 list-[square] list-inside"><li>Viscount Pierce | 2024-Present</li><li>CI Global Asset Management | 2012-2024</li></ul></div>) },
-    { id: 2, number: "11", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Customer Success and Business Analysis Experience</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Developing strong relationship management and account expansion processes to establish long term partnerships</li><li>Applying strategic thinking and analytical expertise to identify opportunities and shape business direction</li><li>A solution-oriented leader, aligning client needs with impactful outcomes</li></ul></div>) },
+    { id: 2, number: "11", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Customer Success and Business Analysis Experience</h2><ul className="text-md sm:text-lg text-white/70 list-[square] list-inside"><li>Developing strong relationship management and account expansion processes to establish long term partnerships</li><li>Applying strategic thinking and analytical expertise to identify opportunities and shape business direction</li><li>A solution-oriented leader, aligning client needs with impactful outcomes</li></ul></div>) },
     { id: 3, number: "8", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Project Management Experience</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Fostering strong stakeholder engagement and transparent communication to support informed and timely decision-making</li><li>Applying Agile methodologies and milestone-driven planning to bring structure, clarity, and momentum to complex projects</li></ul></div>) },
     { id: 4, number: "2+", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Management Consulting Experience</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Leading strategic, client-centric engagements that redefined business models and delivered sustainable value across diverse industries</li><li>Bringing an entrepreneurial drive mindset to initiate new service streams and drive growth-oriented consulting initiatives</li></ul></div>) },
     { id: 5, number: "3+", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Professional Accreditations</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Project Management Professional (PMP)</li><li>Software Engineering (MERN Stack)</li><li>Digital Product Management</li></ul></div>) },
@@ -57,7 +57,7 @@ export default function Bio() {
       </div>
 
       {/* Chevron Navigation */}
-      <ChevronNav prev="/about" next="/timeline" />
+      <ChevronNav prev="/about" next="/exp1" />
     </section>
   );
 }

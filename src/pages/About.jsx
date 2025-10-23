@@ -41,13 +41,16 @@ export default function About() {
       <div className="md:row-span-2 rounded-2xl p-0 sm:p-8 flex flex-col justify-center items-center text-start shadow-lg">
         {/* <h3 className="text-4xl font-semibold mb-3">Accredited. Experienced. Adaptable.</h3> */}
         <p className="text-xl opacity-90 mb-6 max-w-lg">
-          Renner McCreath is a project manager and business analyst with over ten years of experience across the finance and technology sectors.
+          Nice to meet you! My name is Renner McCreath - a project manager and business analyst with over ten years of experience across the finance and technology sectors.
         </p>
         <p className="text-xl opacity-90 mb-6 max-w-lg">
-          As Senior Business Analyst and Project Manager of CI Global Asset Management's National Accounts team, Renner led sales and marketing projects to approve award-winning investment solutions at Canada's largest Mutual Fund dealers. Managing multiple teams of 2-10 on projects spanning up to six months and relying on his strengths of communication, stakeholder management, and project scaling, Renner assisted in generating over $100 million in annual gross sales since 2019.
+          I am currently a Management Consultant with my firm, Viscount Pierce. In my role, I help enterprise clients in tech and finance define strategic priorities, modernize operations, and execute transformation initiatives. My approach combines structured frameworks, collaborative problem-solving, and a focus on building scalable solutions for long-term growth.
         </p>
         <p className="text-xl opacity-90 mb-6 max-w-lg">
-          For a more in-depth look at Renner's career, please navigate using the arrows on either side of the page, or swiping on mobile.
+          As Senior Business Analyst and Project Manager of CI Global Asset Management's National Accounts team, I led sales and marketing projects to approve award-winning investment solutions at Canada's largest Mutual Fund dealers. Managing multiple teams of 2-10 on projects spanning up to six months - and relying on my strengths of communication, stakeholder management, and project scaling - I assisted in generating over $100 million in annual gross sales since 2019.
+        </p>
+        <p className="text-xl opacity-90 mb-6 max-w-lg">
+          For a more in-depth look at my career, please navigate using the arrows on either side of the page, or swiping on mobile.
         </p>
       </div>
       

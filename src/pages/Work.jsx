@@ -9,77 +9,77 @@ export default function Work() {
   const timelineItems = [
     {
       id: 1,
-      year: "2010",
+      year: "Coming Soon!",
       content: (
         <div>
-          <h3 className="text-2xl font-bold mb-2">Start of Career</h3>
+          <h3 className="text-2xl font-bold mb-2">My case studies and published works are on their way here...</h3>
           <p className="text-white/80">
-            This is where it all began — foundational roles and early skills.
+            Check back very soon for updates!
           </p>
-          <Link to="/testarticle10172025" className="hover:text-[#c89116] transition-colors !font-oswald">read more...</Link>
+          {/* <Link to="/testarticle10172025" className="hover:text-[#c89116] transition-colors !font-oswald">read more...</Link> */}
         </div>
       ),
     },
-    {
-      id: 2,
-      year: "2014",
-      content: (
-        <div>
-          <h3 className="text-2xl font-bold mb-2">Key Milestone</h3>
-          <p className="text-white/80">
-            A major turning point in my professional journey.
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 3,
-      year: "2017",
-      content: (
-        <div>
-          <h3 className="text-2xl font-bold mb-2">Leadership</h3>
-          <p className="text-white/80">
-            Transitioning into leadership roles and project ownership.
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 4,
-      year: "2020",
-      content: (
-        <div>
-          <h3 className="text-2xl font-bold mb-2">Major Project</h3>
-          <p className="text-white/80">
-            Leading strategic projects with measurable impact.
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 5,
-      year: "2022",
-      content: (
-        <div>
-          <h3 className="text-2xl font-bold mb-2">New Chapter</h3>
-          <p className="text-white/80">
-            Expanding my scope into new industries and specializations.
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 6,
-      year: "2025",
-      content: (
-        <div>
-          <h3 className="text-2xl font-bold mb-2">Present</h3>
-          <p className="text-white/80">
-            Continuing to grow and deliver value at scale.
-          </p>
-        </div>
-      ),
-    },
+    // {
+    //   id: 2,
+    //   year: "2014",
+    //   content: (
+    //     <div>
+    //       <h3 className="text-2xl font-bold mb-2">Key Milestone</h3>
+    //       <p className="text-white/80">
+    //         A major turning point in my professional journey.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   id: 3,
+    //   year: "2017",
+    //   content: (
+    //     <div>
+    //       <h3 className="text-2xl font-bold mb-2">Leadership</h3>
+    //       <p className="text-white/80">
+    //         Transitioning into leadership roles and project ownership.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   id: 4,
+    //   year: "2020",
+    //   content: (
+    //     <div>
+    //       <h3 className="text-2xl font-bold mb-2">Major Project</h3>
+    //       <p className="text-white/80">
+    //         Leading strategic projects with measurable impact.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   id: 5,
+    //   year: "2022",
+    //   content: (
+    //     <div>
+    //       <h3 className="text-2xl font-bold mb-2">New Chapter</h3>
+    //       <p className="text-white/80">
+    //         Expanding my scope into new industries and specializations.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
+    // {
+    //   id: 6,
+    //   year: "2025",
+    //   content: (
+    //     <div>
+    //       <h3 className="text-2xl font-bold mb-2">Present</h3>
+    //       <p className="text-white/80">
+    //         Continuing to grow and deliver value at scale.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
   ];
 
   const activeContent = timelineItems.find((item) => item.id === activeItem)?.content;
