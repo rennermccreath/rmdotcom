@@ -275,6 +275,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from "./components/Navbar";
 
@@ -324,6 +325,9 @@ export default function App() {
         lg:bg-[url('/src/assets/background.jpg')]
       "
     >
+      {/* ✅ Scroll to top on route change */}
+      <ScrollToTop />
+      
       {/* ✅ Overlay for readability */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 

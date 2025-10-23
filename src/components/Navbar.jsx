@@ -139,7 +139,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`absolute top-full left-0 w-full bg-white/50 shadow-md md:hidden transform transition-all duration-300 ease-in-out origin-top ${
+        className={`absolute top-full left-0 w-full bg-black/70 shadow-md md:hidden transform transition-all duration-300 ease-in-out origin-top ${
           isOpen
             ? "scale-y-100 opacity-100"
             : "scale-y-0 opacity-0 pointer-events-none"
