@@ -23,7 +23,7 @@ export default function CoLabQ42025() {
               The Numbers
             </motion.p>
           <div className="max-w-4xl w-full text-center mb-8">
-             
+
             {/* 📹 Loom Video Embed with fade-in animation */}
             <motion.div
               className="relative w-full pt-[56.25%]"
@@ -42,7 +42,7 @@ export default function CoLabQ42025() {
           </div>
     
           {/* Chevron Navigation */}
-          <ChevronNav prev="/exp2" next="/timeline" vertical />
+          <ChevronNav prev="/exp2" next="/timeline" />
         </section>
       );
 }
