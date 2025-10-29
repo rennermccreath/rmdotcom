@@ -294,6 +294,18 @@ import Timeline from "./pages/Timeline";
 import Work from "./pages/Work";
 import TestArticle10172025 from "./pages/TestArticle10172025";
 
+//Applications
+
+//CoLab
+import CoLabQ42025 from "./pages/CoLabQ42025";
+import CoLabQ420251 from "./pages/CoLabQ420251";
+import CoLabQ420252 from "./pages/CoLabQ420252";
+import CoLabQ420253 from "./pages/CoLabQ420253";
+import CoLabQ420254 from "./pages/CoLabQ420254";
+import CoLabQ420255 from "./pages/CoLabQ420255";
+import CoLabQ420256 from "./pages/CoLabQ420256";
+import CoLabQ420257 from "./pages/CoLabQ420257";
+
 // Assets
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
@@ -357,6 +369,18 @@ export default function App() {
 
               {/* Articles */}
               <Route path="/testarticle10172025" element={<PageWrapper><TestArticle10172025 /></PageWrapper>} />
+
+              {/* Applications */}
+
+              {/* CoLab */}
+              <Route path="/colabq42025" element={<PageWrapper><CoLabQ42025 /></PageWrapper>} />
+              <Route path="/colabq420251" element={<PageWrapper><CoLabQ420251 /></PageWrapper>} />
+              <Route path="/colabq420252" element={<PageWrapper><CoLabQ420252 /></PageWrapper>} />
+              <Route path="/colabq420253" element={<PageWrapper><CoLabQ420253 /></PageWrapper>} />
+              <Route path="/colabq420254" element={<PageWrapper><CoLabQ420254 /></PageWrapper>} />
+              <Route path="/colabq420255" element={<PageWrapper><CoLabQ420255 /></PageWrapper>} />
+              <Route path="/colabq420256" element={<PageWrapper><CoLabQ420256 /></PageWrapper>} />
+              <Route path="/colabq420257" element={<PageWrapper><CoLabQ420257 /></PageWrapper>} />
 
             </Routes>
           </AnimatePresence>
