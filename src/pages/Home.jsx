@@ -62,7 +62,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
           >
-            Delivering leading insights in the fields of project management, business analysis, and customer success.
+            Delivering leading insights in the fields of customer success, project management, and business analysis.
           </motion.p>
         </div>
       </motion.div>

@@ -135,39 +135,63 @@ export default function Exp1() {
   const timelineItems = [
     {
       id: 1,
-      year: "Management Consultant - Viscount Pierce",
+      year: "Student Success Advisor - Boreal Education",
       content: (
         <div>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white/80">
-            Management Consultant | Viscount Pierce
+            Student Success Advisor
           </h3>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-center text-[#c89116]/90">
-            2024–Present
+            Boreal Education | 2025–Present
           </h3>
-          <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
+          {/* <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
             I work with enterprise clients across the tech and finance sectors to help navigate
             complex challenges, create maintainable operational strategies, and scale with confidence.
             Blending strategy, data, and execution, my focus is empowering clients to establish,
             emerge, and endure — the three pillars of Viscount Pierce.
+          </p> */}
+          <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
+            I work with student cohorts across undergraduate and post-graduate programs to achieve both academic and personal goals associated with the overall learning journey. Through the provision of guidance, resources, and support, I empower students to overcome obstacles and thrive academically.
           </p>
           <ul className="text-base sm:text-lg md:text-xl text-[#c89116]/90 list-[square] list-inside space-y-2">
-            <li>Developing strong relationship management and account expansion processes</li>
-            <li>Applying strategic thinking and analytical expertise to shape business direction</li>
-            <li>A solution-oriented leader aligning client needs with impactful outcomes</li>
+            <li>Providing personalized guidance through a welcoming and supportive environment for students</li>
+            <li>Leveraging and developing program engagement plans tailored to individual student needs</li>
+            <li>Monitoring progress and overall well-being of students</li>
           </ul>
         </div>
       ),
     },
     {
       id: 2,
+      year: "Fruit Suite - Distribuiton Logistics and Customer Success",
+      content: (
+        <div>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white/80">
+            Distribution Logistics, Customer Success
+          </h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-center text-[#c89116]/90">
+            Fruit Suite | 2024–2025
+          </h3>
+          <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
+            Working with a small team passionate about their craft, I implemented customer success practices that contributed to an increase in trial conversion and overall sales. 
+          </p>
+          <ul className="text-base sm:text-lg md:text-xl text-[#c89116]/90 list-[square] list-inside space-y-2">
+            <li>Collaborated with sales, customer success, and distribution teams to achieve the best financial year in company history (FY 2025)</li>
+            <li>Implemented customer success procedures leading to a significant increase in positive client feedback.</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      id: 3,
       year: "CI Global Asset Management - Sr. Business Analyst and Project Manager",
       content: (
         <div>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white/80">
-            Sr. Business Analyst and Project Manager | CI Global Asset Management
+            Sr. Business Analyst and Project Manager
           </h3>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-center text-[#c89116]/90">
-            2017–2024
+            CI Global Asset Management | 2017–2024
           </h3>
           <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
             Working with Canada's largest mutual fund dealerships, my team was responsible for
@@ -181,16 +205,16 @@ export default function Exp1() {
         </div>
       ),
     },
-    {
-      id: 3,
+     {
+      id: 4,
       year: "CI Global Asset Management - Business Analyst",
       content: (
         <div>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white/80">
-            Business Analyst, Client Services | CI Global Asset Management
+            Business Analyst, Client Services
           </h3>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-center text-[#c89116]/90">
-            2013–2014
+            CI Global Asset Management | 2013–2014
           </h3>
           <p className="text-base sm:text-lg md:text-2xl text-white/80 py-5 leading-relaxed">
             Prior to moving to CI's front office, I created strategies and championed initiatives for
