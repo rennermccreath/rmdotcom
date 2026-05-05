@@ -3,43 +3,58 @@ import { motion } from "framer-motion";
 import ChevronNav from "../components/ChevronNav";
 
 export default function QuoQ220262() {
-  return (
-    <section
-          id="project-management"
-          className="relative min-h-screen flex flex-col justify-center items-center text-white px-4 py-10"
-        >
-            <motion.p
-              className="
-                text-4xl md:text-7xl max-w-2xl mx-auto font-semibold mb-1 opacity-90 pb-5
-                text-[#c89116]/70
-                drop-shadow-[0_0_12px_#c89116]
+    const gridItems = [
+      { id: 1, number: "14+ years", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Total Years of Professional Experience</h2><ul className="text-xl text-white/70 list-[square] list-inside"><li>Boreal Education | 2025-Present</li><li>Fruit Suite | 2024-2025</li><li>CI Global Asset Management | 2012-2024</li></ul></div>) },
+      { id: 2, number: "13", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Customer Onboarding & Implementation</h2><ul className="text-md sm:text-lg text-white/70 list-[square] list-inside"><li>Complete lead to enrolment onboarding process | Boreal Education, 2024-present</li><li>New account engagement and onboarding | Fruit Suite, 2024-2025</li><li>9-figure product launches, key account partnerships | CI Global Asset Management, 2017-2024</li><li>Internal onboarding and curriculum development for 150+ contact centre agents| CI Global Asset Management, 2013-2017 </li></ul></div>) },
+      { id: 3, number: "9", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Multi-Stakeholder Onboarding</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Management of enrolment and onboarding of 50+ concurrent prospective students | Boreal Education, 2025-present</li><li>Sales Enablement and Customer Success of 75 concurrent clients with unique needs | Fruit Suite, 2024-2025</li><li>Project Manager for onboarding client due diligence of 25+ products, 10+ dealerships | CI Global Asset Management, 2017-2024</li></ul></div>) },
+      { id: 4, number: "5", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Bridging the Technical Enablement Gap</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Presentation of technical software concepts to non-technical stakeholders | CI Global Asset Management, 2013-2017</li><li>Accredited Software Engineer | General Assembly Toronto, Class of Summer 2021</li></ul></div>) },
+      { id: 5, number: "3+", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Professional Accreditations</h2><ul className="text-lg text-white/70 list-[square] list-inside"><li>Project Management Professional (PMP)</li><li>Software Engineering (MERN Stack)</li><li>Digital Product Management</li></ul></div>) },
+      { id: 6, number: "See More...", content: (<div><h2 className="text-lg sm:text-3xl font-semibold mb-1">Click or press the right arrow for more</h2></div>) },
+    ];
+  
+    return (
+      <section
+        id="bio"
+        className="relative min-h-screen flex flex-col items-center text-white px-2 py-8"
+      >
+        <motion.p
+    className="
+      text-4xl md:text-7xl max-w-2xl mx-auto font-semibold mb-1 opacity-90 pb-5
+      text-[#c89116]/70
+      drop-shadow-[0_0_12px_#c89116]
+      transition-all duration-500 ease-out
+      hover:text-[#c89116]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#c89116]
+    "
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+  >
+    The Right Experience to Deliver Results
+  </motion.p>
+        <div className="max-w-8xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[4px]">
+          {gridItems.map((item) => (
+            <div
+              key={item.id}
+              className="relative bg-black/60 border border-white/10 p-6 h-64 sm:h-72 lg:h-80 flex flex-col justify-start group overflow-hidden"
+            >
+              {/* Glowing Gold Number — Bottom Right */}
+              <span
+                className="absolute bottom-2 right-2 
+                text-8xl sm:text-8xl lg:text-9xl  /* ⬅ bigger on mobile too */
+                font-bold select-none leading-none
+                text-[#c89116]/40
                 transition-all duration-500 ease-out
-                hover:text-[#c89116]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#c89116]
-              "
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-            >
-              The Numbers
-            </motion.p>
-          <div className="max-w-4xl w-full text-center mb-8">
-
-            {/* 📹 Loom Video Embed with fade-in animation */}
-            <motion.div
-              className="relative w-full pt-[56.25%]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              <iframe
-                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?"
-                frameBorder="0"
-                allowFullScreen
-                loading="lazy"
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-              ></iframe>
-            </motion.div>
-          </div>
+                group-hover:text-[#c89116]/90 group-hover:scale-110
+                group-hover:drop-shadow-[0_0_20px_#c89116]"
+              >
+                {item.number}
+              </span>
+  
+              {/* Flexible Content */}
+              <div className="relative z-10">{item.content}</div>
+            </div>
+          ))}
+        </div>
 
           {/* Chevron Navigation */}
           <ChevronNav prev="/quoq220261" next="/quoq220263" />

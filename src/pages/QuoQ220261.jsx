@@ -10,7 +10,7 @@ export default function QuoQ220261() {
         >
             <motion.p
               className="
-                text-4xl md:text-7xl max-w-2xl mx-auto font-semibold mb-1 opacity-90 pb-5
+                text-4xl md:text-7xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
                 text-[#c89116]/70
                 drop-shadow-[0_0_12px_#c89116]
                 transition-all duration-500 ease-out
@@ -20,7 +20,7 @@ export default function QuoQ220261() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              The Numbers
+              Renner McCreath 🤝 Quo
             </motion.p>
           <div className="max-w-4xl w-full text-center mb-8">
 
@@ -32,7 +32,7 @@ export default function QuoQ220261() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <iframe
-                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?"
+                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
                 frameBorder="0"
                 allowFullScreen
                 loading="lazy"
