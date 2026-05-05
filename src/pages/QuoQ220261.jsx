@@ -26,7 +26,7 @@ export default function QuoQ220261() {
 
             {/* 📹 Loom Video Embed with fade-in animation */}
             <motion.div
-              className="relative w-full pt-[56.25%]"
+              className="relative w-1/2 mx-auto pt-[25.25%]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -40,6 +40,21 @@ export default function QuoQ220261() {
               ></iframe>
             </motion.div>
           </div>
+
+          <motion.p
+              className="
+                text-4xl md:text-5xl max-w-8xl mx-auto font-semibold mb-1 opacity-90 pb-5 text-center
+                text-[#edfc47]/70
+                drop-shadow-[0_0_12px_#edfc47]
+                transition-all duration-500 ease-out
+                hover:text-[#edfc47]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#edfc47]
+              "
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            >
+              Candidate Presentation - Customer Onboarding Manager
+            </motion.p>
 
           {/* Chevron Navigation */}
           <ChevronNav next="/quoq220262" />
