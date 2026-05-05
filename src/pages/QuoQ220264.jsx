@@ -20,7 +20,7 @@ export default function QuoQ220264() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              The Numbers
+              The "Why?" | X Factors
             </motion.p>
           <div className="max-w-4xl w-full text-center mb-8">
 
@@ -32,7 +32,7 @@ export default function QuoQ220264() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <iframe
-                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?"
+                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
                 frameBorder="0"
                 allowFullScreen
                 loading="lazy"
@@ -42,7 +42,7 @@ export default function QuoQ220264() {
           </div>
 
           {/* Chevron Navigation */}
-          <ChevronNav prev="/quoq220263" next="/quoq220265" />
+          <ChevronNav prev="/quoq220263" next="/quoq220261" />
         </section>
       );
 }
