@@ -319,6 +319,7 @@ import QuoQ220268 from "./pages/QuoQ220268";
 // Assets
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
+import backgroundquo from "./assets/backgroundquo.png";
 
 // ✅ Reusable transition wrapper
 const PageWrapper = ({ children }) => (
@@ -335,17 +336,23 @@ const PageWrapper = ({ children }) => (
 
 export default function App() {
   const location = useLocation();
+  
+  // Check if current route is a quo page
+  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220');
+  
+  // Conditional background classes
+  const backgroundClasses = isQuoPage 
+    ? "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]"
+    : "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('/src/assets/background.jpg')]";
 
   return (
     <div
-      className="
+      className={`
         relative
         w-full min-h-screen
         bg-fixed bg-cover bg-center
-        bg-[url('./assets/background2.png')]
-        sm:bg-[url('/src/assets/background2.png')]
-        lg:bg-[url('/src/assets/background.jpg')]
-      "
+        ${backgroundClasses}
+      `}
     >
       {/* ✅ Scroll to top on route change */}
       <ScrollToTop />

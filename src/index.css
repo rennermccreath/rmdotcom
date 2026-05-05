@@ -101,3 +101,36 @@ button:focus-visible {
     background-color: rgba(255, 255, 255, 0.15);
   }
 }
+
+/* ========================================
+   Quo-Specific Styling (#edfc47 - Lime Yellow)
+   ======================================== */
+.quo-accent {
+  color: #edfc47;
+}
+
+.quo-accent-hover:hover {
+  color: #edfc47;
+}
+
+.quo-text-primary {
+  color: #edfc47;
+  opacity: 0.7;
+}
+
+.quo-text-primary:hover {
+  color: #edfc47;
+  opacity: 0.9;
+}
+
+.quo-glow-sm {
+  filter: drop-shadow(0 0 8px #edfc47);
+}
+
+.quo-glow {
+  filter: drop-shadow(0 0 12px #edfc47);
+}
+
+.quo-glow-lg {
+  filter: drop-shadow(0 0 20px #edfc47);
+}

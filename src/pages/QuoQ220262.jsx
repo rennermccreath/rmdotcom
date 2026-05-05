@@ -19,11 +19,11 @@ export default function QuoQ220262() {
       >
         <motion.p
     className="
-      text-4xl md:text-7xl max-w-2xl mx-auto font-semibold mb-1 opacity-90 pb-5
-      text-[#c89116]/70
-      drop-shadow-[0_0_12px_#c89116]
+      text-4xl md:text-7xl max-w-7xl mx-auto font-semibold mb-1 opacity-90 pb-5
+      text-[#edfc47]/70
+      drop-shadow-[0_0_12px_#edfc47]
       transition-all duration-500 ease-out
-      hover:text-[#c89116]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#c89116]
+      hover:text-[#edfc47]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#edfc47]
     "
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -42,10 +42,10 @@ export default function QuoQ220262() {
                 className="absolute bottom-2 right-2 
                 text-8xl sm:text-8xl lg:text-9xl  /* ⬅ bigger on mobile too */
                 font-bold select-none leading-none
-                text-[#c89116]/40
+                text-[#edfc47]/40
                 transition-all duration-500 ease-out
-                group-hover:text-[#c89116]/90 group-hover:scale-110
-                group-hover:drop-shadow-[0_0_20px_#c89116]"
+                group-hover:text-[#edfc47]/90 group-hover:scale-110
+                group-hover:drop-shadow-[0_0_20px_#edfc47]"
               >
                 {item.number}
               </span>
