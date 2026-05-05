@@ -306,6 +306,16 @@ import CoLabQ420255 from "./pages/CoLabQ420255";
 import CoLabQ420256 from "./pages/CoLabQ420256";
 import CoLabQ420257 from "./pages/CoLabQ420257";
 
+// QuoQ22026x
+import QuoQ220261 from "./pages/QuoQ220261";
+import QuoQ220262 from "./pages/QuoQ220262";
+import QuoQ220263 from "./pages/QuoQ220263";
+import QuoQ220264 from "./pages/QuoQ220264";
+import QuoQ220265 from "./pages/QuoQ220265";
+import QuoQ220266 from "./pages/QuoQ220266";
+import QuoQ220267 from "./pages/QuoQ220267";
+import QuoQ220268 from "./pages/QuoQ220268";
+
 // Assets
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
@@ -381,6 +391,16 @@ export default function App() {
               <Route path="/colabq420255" element={<PageWrapper><CoLabQ420255 /></PageWrapper>} />
               <Route path="/colabq420256" element={<PageWrapper><CoLabQ420256 /></PageWrapper>} />
               <Route path="/colabq420257" element={<PageWrapper><CoLabQ420257 /></PageWrapper>} />
+
+              {/* QuoQ22026x */}
+              <Route path="/quoq220261" element={<PageWrapper><QuoQ220261 /></PageWrapper>} />
+              <Route path="/quoq220262" element={<PageWrapper><QuoQ220262 /></PageWrapper>} />
+              <Route path="/quoq220263" element={<PageWrapper><QuoQ220263 /></PageWrapper>} />
+              <Route path="/quoq220264" element={<PageWrapper><QuoQ220264 /></PageWrapper>} />
+              <Route path="/quoq220265" element={<PageWrapper><QuoQ220265 /></PageWrapper>} />
+              <Route path="/quoq220266" element={<PageWrapper><QuoQ220266 /></PageWrapper>} />
+              <Route path="/quoq220267" element={<PageWrapper><QuoQ220267 /></PageWrapper>} />
+              <Route path="/quoq220268" element={<PageWrapper><QuoQ220268 /></PageWrapper>} />
 
             </Routes>
           </AnimatePresence>
