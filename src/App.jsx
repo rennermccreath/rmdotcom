@@ -316,6 +316,26 @@ import QuoQ220266 from "./pages/QuoQ220266";
 import QuoQ220267 from "./pages/QuoQ220267";
 import QuoQ220268 from "./pages/QuoQ220268";
 
+// AbsorbQ22026x
+import AbsorbQ220261 from "./pages/AbsorbQ220261";
+import AbsorbQ220262 from "./pages/AbsorbQ220262";
+import AbsorbQ220263 from "./pages/AbsorbQ220263";
+import AbsorbQ220264 from "./pages/AbsorbQ220264";
+import AbsorbQ220265 from "./pages/AbsorbQ220265";
+import AbsorbQ220266 from "./pages/AbsorbQ220266";
+import AbsorbQ220267 from "./pages/AbsorbQ220267";
+import AbsorbQ220268 from "./pages/AbsorbQ220268";
+
+// SpareQ22026x
+import SpareQ220261 from "./pages/SpareQ220261";
+import SpareQ220262 from "./pages/SpareQ220262";
+import SpareQ220263 from "./pages/SpareQ220263";
+import SpareQ220264 from "./pages/SpareQ220264";
+import SpareQ220265 from "./pages/SpareQ220265";
+import SpareQ220266 from "./pages/SpareQ220266";
+import SpareQ220267 from "./pages/SpareQ220267";
+import SpareQ220268 from "./pages/SpareQ220268";
+
 // Assets
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
@@ -337,8 +357,8 @@ const PageWrapper = ({ children }) => (
 export default function App() {
   const location = useLocation();
   
-  // Check if current route is a quo page
-  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220');
+  // Check if current route is a quo, absorb, or spare page
+  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220') || location.pathname.toLowerCase().startsWith('/absorbq220') || location.pathname.toLowerCase().startsWith('/spareq220');
   
   // Conditional background classes
   const backgroundClasses = isQuoPage 
@@ -408,6 +428,26 @@ export default function App() {
               <Route path="/quoq220266" element={<PageWrapper><QuoQ220266 /></PageWrapper>} />
               <Route path="/quoq220267" element={<PageWrapper><QuoQ220267 /></PageWrapper>} />
               <Route path="/quoq220268" element={<PageWrapper><QuoQ220268 /></PageWrapper>} />
+
+              {/* AbsorbQ22026x */}
+              <Route path="/absorbq220261" element={<PageWrapper><AbsorbQ220261 /></PageWrapper>} />
+              <Route path="/absorbq220262" element={<PageWrapper><AbsorbQ220262 /></PageWrapper>} />
+              <Route path="/absorbq220263" element={<PageWrapper><AbsorbQ220263 /></PageWrapper>} />
+              <Route path="/absorbq220264" element={<PageWrapper><AbsorbQ220264 /></PageWrapper>} />
+              <Route path="/absorbq220265" element={<PageWrapper><AbsorbQ220265 /></PageWrapper>} />
+              <Route path="/absorbq220266" element={<PageWrapper><AbsorbQ220266 /></PageWrapper>} />
+              <Route path="/absorbq220267" element={<PageWrapper><AbsorbQ220267 /></PageWrapper>} />
+              <Route path="/absorbq220268" element={<PageWrapper><AbsorbQ220268 /></PageWrapper>} />
+
+              {/* SpareQ22026x */}
+              <Route path="/spareq220261" element={<PageWrapper><SpareQ220261 /></PageWrapper>} />
+              <Route path="/spareq220262" element={<PageWrapper><SpareQ220262 /></PageWrapper>} />
+              <Route path="/spareq220263" element={<PageWrapper><SpareQ220263 /></PageWrapper>} />
+              <Route path="/spareq220264" element={<PageWrapper><SpareQ220264 /></PageWrapper>} />
+              <Route path="/spareq220265" element={<PageWrapper><SpareQ220265 /></PageWrapper>} />
+              <Route path="/spareq220266" element={<PageWrapper><SpareQ220266 /></PageWrapper>} />
+              <Route path="/spareq220267" element={<PageWrapper><SpareQ220267 /></PageWrapper>} />
+              <Route path="/spareq220268" element={<PageWrapper><SpareQ220268 /></PageWrapper>} />
 
             </Routes>
           </AnimatePresence>

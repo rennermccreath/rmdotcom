@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ChevronNav from "../components/ChevronNav";
 
-export default function QuoQ220261() {
+export default function AbsorbQ220261() {
   return (
     <section
           id="project-management"
@@ -20,7 +20,7 @@ export default function QuoQ220261() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              Renner McCreath 🤝 Quo
+              Renner McCreath 🤝 Absorb
             </motion.p>
           <div className="max-w-4xl w-full text-center mb-8">
 
@@ -58,7 +58,7 @@ export default function QuoQ220261() {
             
 
           {/* Chevron Navigation */}
-          <ChevronNav next="/quoq220262" />
+          <ChevronNav next="/absorbq220262" />
         </section>
       );
 }
