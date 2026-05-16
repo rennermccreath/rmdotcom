@@ -134,3 +134,135 @@ button:focus-visible {
 .quo-glow-lg {
   filter: drop-shadow(0 0 20px #edfc47);
 }
+
+/* ========================================
+   CoLab-Specific Styling (#a94eec - Purple)
+   ======================================== */
+.colab-accent {
+  color: #a94eec;
+}
+
+.colab-accent-hover:hover {
+  color: #a94eec;
+}
+
+.colab-text-primary {
+  color: #a94eec;
+  opacity: 0.7;
+}
+
+.colab-text-primary:hover {
+  color: #a94eec;
+  opacity: 0.9;
+}
+
+.colab-glow-sm {
+  filter: drop-shadow(0 0 8px #a94eec);
+}
+
+.colab-glow {
+  filter: drop-shadow(0 0 12px #a94eec);
+}
+
+.colab-glow-lg {
+  filter: drop-shadow(0 0 20px #a94eec);
+}
+
+/* ========================================
+   Clio-Specific Styling (#008672 - Teal)
+   ======================================== */
+.clio-accent {
+  color: #008672;
+}
+
+.clio-accent-hover:hover {
+  color: #008672;
+}
+
+.clio-text-primary {
+  color: #008672;
+  opacity: 0.7;
+}
+
+.clio-text-primary:hover {
+  color: #008672;
+  opacity: 0.9;
+}
+
+.clio-glow-sm {
+  filter: drop-shadow(0 0 8px #008672);
+}
+
+.clio-glow {
+  filter: drop-shadow(0 0 12px #008672);
+}
+
+.clio-glow-lg {
+  filter: drop-shadow(0 0 20px #008672);
+}
+
+/* ========================================
+   Absorb-Specific Styling (#ffd33d - Golden Yellow)
+   ======================================== */
+.absorb-accent {
+  color: #ffd33d;
+}
+
+.absorb-accent-hover:hover {
+  color: #ffd33d;
+}
+
+.absorb-text-primary {
+  color: #ffd33d;
+  opacity: 0.7;
+}
+
+.absorb-text-primary:hover {
+  color: #ffd33d;
+  opacity: 0.9;
+}
+
+.absorb-glow-sm {
+  filter: drop-shadow(0 0 8px #ffd33d);
+}
+
+.absorb-glow {
+  filter: drop-shadow(0 0 12px #ffd33d);
+}
+
+.absorb-glow-lg {
+  filter: drop-shadow(0 0 20px #ffd33d);
+}
+
+/* ========================================
+   Spare-Specific Styling (#ffd56a - Soft Gold)
+   ======================================== */
+.spare-accent {
+  color: #ffd56a;
+}
+
+.spare-accent-hover:hover {
+  color: #ffd56a;
+}
+
+.spare-text-primary {
+  color: #ffd56a;
+  opacity: 0.7;
+}
+
+.spare-text-primary:hover {
+  color: #ffd56a;
+  opacity: 0.9;
+}
+
+.spare-glow-sm {
+  filter: drop-shadow(0 0 8px #ffd56a);
+}
+
+.spare-glow {
+  filter: drop-shadow(0 0 12px #ffd56a);
+}
+
+.spare-glow-lg {
+  filter: drop-shadow(0 0 20px #ffd56a);
+}

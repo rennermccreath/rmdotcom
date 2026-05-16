@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ChevronNav from "../components/ChevronNav";
 
-export default function AbsorbQ220261() {
+export default function ClioQ220261() {
   return (
     <section
           id="project-management"
@@ -10,17 +10,17 @@ export default function AbsorbQ220261() {
         >
             <motion.p
               className="
-                text-4xl md:text-6xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
-                text-[#edfc47]/70
-                drop-shadow-[0_0_12px_#edfc47]
+                text-4xl md:text-7xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
+                text-[#008672]/70
+                drop-shadow-[0_0_12px_#008672]
                 transition-all duration-500 ease-out
-                hover:text-[#edfc47]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#edfc47]
+                hover:text-[#008672]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#008672]
               "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              Renner McCreath 🤝 Absorb
+              Renner McCreath 🤝 Clio
             </motion.p>
           <div className="max-w-4xl w-full text-center mb-8">
 
@@ -44,10 +44,10 @@ export default function AbsorbQ220261() {
           <motion.p
               className="
                 text-4xl md:text-5xl max-w-8xl mx-auto font-semibold mb-1 opacity-90 pb-5 text-center
-                text-[#edfc47]/70
-                drop-shadow-[0_0_12px_#edfc47]
+                text-[#008672]/70
+                drop-shadow-[0_0_12px_#008672]
                 transition-all duration-500 ease-out
-                hover:text-[#edfc47]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#edfc47]
+                hover:text-[#008672]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#008672]
               "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ export default function AbsorbQ220261() {
             
 
           {/* Chevron Navigation */}
-          <ChevronNav next="/absorbq220262" />
+          <ChevronNav next="/clioq220262" />
         </section>
       );
 }

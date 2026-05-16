@@ -336,10 +336,23 @@ import SpareQ220266 from "./pages/SpareQ220266";
 import SpareQ220267 from "./pages/SpareQ220267";
 import SpareQ220268 from "./pages/SpareQ220268";
 
+// ClioQ22026x
+import ClioQ220261 from "./pages/ClioQ220261";
+import ClioQ220262 from "./pages/ClioQ220262";
+import ClioQ220263 from "./pages/ClioQ220263";
+import ClioQ220264 from "./pages/ClioQ220264";
+import ClioQ220265 from "./pages/ClioQ220265";
+import ClioQ220266 from "./pages/ClioQ220266";
+import ClioQ220267 from "./pages/ClioQ220267";
+import ClioQ220268 from "./pages/ClioQ220268";
+
 // Assets
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
 import backgroundquo from "./assets/backgroundquo.png";
+import backgroundabsorb from "./assets/absorb.png";
+import backgroundspare from "./assets/spare.png";
+import backgroundclio from "./assets/clio.png";
 
 // ✅ Reusable transition wrapper
 const PageWrapper = ({ children }) => (
@@ -357,13 +370,31 @@ const PageWrapper = ({ children }) => (
 export default function App() {
   const location = useLocation();
   
-  // Check if current route is a quo, absorb, or spare page
-  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220') || location.pathname.toLowerCase().startsWith('/absorbq220') || location.pathname.toLowerCase().startsWith('/spareq220');
+  // Check if current route is an absorb page
+  const isAbsorbPage = location.pathname.toLowerCase().startsWith('/absorbq220');
+  
+  // Check if current route is a spare page
+  const isSparePage = location.pathname.toLowerCase().startsWith('/spareq220');
+  
+  // Check if current route is a clio page
+  const isClioPage = location.pathname.toLowerCase().startsWith('/clioq220');
+  
+  // Check if current route is a quo page
+  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220');
   
   // Conditional background classes
-  const backgroundClasses = isQuoPage 
-    ? "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]"
-    : "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('/src/assets/background.jpg')]";
+  let backgroundClasses;
+  if (isAbsorbPage) {
+    backgroundClasses = "bg-[url('./assets/absorb.png')] sm:bg-[url('/src/assets/absorb.png')] lg:bg-[url('./assets/absorb.png')]";
+  } else if (isSparePage) {
+    backgroundClasses = "bg-[url('./assets/spare.png')] sm:bg-[url('/src/assets/spare.png')] lg:bg-[url('./assets/spare.png')]";
+  } else if (isClioPage) {
+    backgroundClasses = "bg-[url('./assets/clio.png')] sm:bg-[url('/src/assets/clio.png')] lg:bg-[url('./assets/clio.png')]";
+  } else if (isQuoPage) {
+    backgroundClasses = "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]";
+  } else {
+    backgroundClasses = "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
+  }
 
   return (
     <div
@@ -428,6 +459,16 @@ export default function App() {
               <Route path="/quoq220266" element={<PageWrapper><QuoQ220266 /></PageWrapper>} />
               <Route path="/quoq220267" element={<PageWrapper><QuoQ220267 /></PageWrapper>} />
               <Route path="/quoq220268" element={<PageWrapper><QuoQ220268 /></PageWrapper>} />
+
+              {/* ClioQ22026x */}
+              <Route path="/clioq220261" element={<PageWrapper><ClioQ220261 /></PageWrapper>} />
+              <Route path="/clioq220262" element={<PageWrapper><ClioQ220262 /></PageWrapper>} />
+              <Route path="/clioq220263" element={<PageWrapper><ClioQ220263 /></PageWrapper>} />
+              <Route path="/clioq220264" element={<PageWrapper><ClioQ220264 /></PageWrapper>} />
+              <Route path="/clioq220265" element={<PageWrapper><ClioQ220265 /></PageWrapper>} />
+              <Route path="/clioq220266" element={<PageWrapper><ClioQ220266 /></PageWrapper>} />
+              <Route path="/clioq220267" element={<PageWrapper><ClioQ220267 /></PageWrapper>} />
+              <Route path="/clioq220268" element={<PageWrapper><ClioQ220268 /></PageWrapper>} />
 
               {/* AbsorbQ22026x */}
               <Route path="/absorbq220261" element={<PageWrapper><AbsorbQ220261 /></PageWrapper>} />
