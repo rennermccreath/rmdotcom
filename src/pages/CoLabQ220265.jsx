@@ -42,7 +42,7 @@ export default function CoLabQ220265() {
           </div>
 
           {/* Chevron Navigation */}
-          <ChevronNav prev="/colabq220254" next="/colabq220256" />
+          <ChevronNav prev="/colabq220264" next="/colabq220266" />
         </section>
       );
 }

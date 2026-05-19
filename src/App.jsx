@@ -463,14 +463,14 @@ export default function App() {
               {/* Applications */}
 
               {/* CoLab */}
-              <Route path="/colabq22025" element={<PageWrapper><CoLabQ22026 /></PageWrapper>} />
-              <Route path="/colabq220251" element={<PageWrapper><CoLabQ220261 /></PageWrapper>} />
-              <Route path="/colabq220252" element={<PageWrapper><CoLabQ220262 /></PageWrapper>} />
-              <Route path="/colabq220253" element={<PageWrapper><CoLabQ220263 /></PageWrapper>} />
-              <Route path="/colabq220254" element={<PageWrapper><CoLabQ220264 /></PageWrapper>} />
-              <Route path="/colabq220255" element={<PageWrapper><CoLabQ220265 /></PageWrapper>} />
-              <Route path="/colabq220256" element={<PageWrapper><CoLabQ220266 /></PageWrapper>} />
-              <Route path="/colabq220257" element={<PageWrapper><CoLabQ220267 /></PageWrapper>} />
+              <Route path="/colabq22026" element={<PageWrapper><CoLabQ22026 /></PageWrapper>} />
+              <Route path="/colabq220261" element={<PageWrapper><CoLabQ220261 /></PageWrapper>} />
+              <Route path="/colabq220262" element={<PageWrapper><CoLabQ220262 /></PageWrapper>} />
+              <Route path="/colabq220263" element={<PageWrapper><CoLabQ220263 /></PageWrapper>} />
+              <Route path="/colabq220264" element={<PageWrapper><CoLabQ220264 /></PageWrapper>} />
+              <Route path="/colabq220265" element={<PageWrapper><CoLabQ220265 /></PageWrapper>} />
+              <Route path="/colabq220266" element={<PageWrapper><CoLabQ220266 /></PageWrapper>} />
+              <Route path="/colabq220267" element={<PageWrapper><CoLabQ220267 /></PageWrapper>} />
 
               {/* QuoQ22026x */}
               <Route path="/quoq220261" element={<PageWrapper><QuoQ220261 /></PageWrapper>} />

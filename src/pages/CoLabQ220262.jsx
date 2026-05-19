@@ -107,7 +107,7 @@ export default function CoLabQ220262() {
       id="experience-timeline"
       className="relative min-h-screen w-full text-white px-4 py-10"
     >
-      <ChevronNav prev="/colabq220251" next="/colabq220253" />
+      <ChevronNav prev="/colabq220261" next="/colabq220263" />
 
       {/* Section Heading */}
       <motion.p
