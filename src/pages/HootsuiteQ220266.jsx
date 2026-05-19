@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ChevronNav from "../components/ChevronNav";
 
-export default function CoLabQ42025() {
+export default function HootsuiteQ220266() {
   return (
     <section
           id="project-management"
@@ -11,10 +11,10 @@ export default function CoLabQ42025() {
             <motion.p
               className="
                 text-4xl md:text-7xl max-w-2xl mx-auto font-semibold mb-1 opacity-90 pb-5
-                text-[#c89116]/70
-                drop-shadow-[0_0_12px_#c89116]
+                text-[#E03035]/70
+                drop-shadow-[0_0_12px_#E03035]
                 transition-all duration-500 ease-out
-                hover:text-[#c89116]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#c89116]
+                hover:text-[#E03035]/90 hover:scale-110 hover:drop-shadow-[0_0_20px_#E03035]
               "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -40,9 +40,9 @@ export default function CoLabQ42025() {
               ></iframe>
             </motion.div>
           </div>
-    
+
           {/* Chevron Navigation */}
-          <ChevronNav prev="/exp2" next="/timeline" />
+          <ChevronNav prev="/hootsuiteq220265" next="/hootsuiteq220267" />
         </section>
       );
 }

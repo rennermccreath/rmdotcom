@@ -77,11 +77,13 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaLinkedin, FaEnvelope, FaRss } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/RM.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHootsuitePage = location.pathname.toLowerCase().startsWith('/hootsuiteq220');
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -95,10 +97,14 @@ export default function Navbar() {
       </div>
 
       {/* Desktop nav links */}
-      <div className="hidden md:flex space-x-4 items-center">
-        <Link to="/" className="hover:text-[#c89116] transition-colors">Home</Link>
-        <Link to="/about" className="hover:text-[#c89116] transition-colors">About</Link>
-        <Link to="/work" className="hover:text-[#c89116] transition-colors">Work</Link>
+      <div className="hidden md:flex items-center">
+        {!isHootsuitePage && (
+          <div className="flex space-x-4">
+            <Link to="/" className="hover:text-[#c89116] transition-colors">Home</Link>
+            <Link to="/about" className="hover:text-[#c89116] transition-colors">About</Link>
+            <Link to="/work" className="hover:text-[#c89116] transition-colors">Work</Link>
+          </div>
+        )}
 
         {/* Social Icons */}
         <div className="flex space-x-4 ml-4">
@@ -146,15 +152,19 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center py-4 space-y-4">
-          <Link to="/" onClick={handleLinkClick} className="hover:text-[#c89116]">
-            Home
-          </Link>
-          <Link to="/about" onClick={handleLinkClick} className="hover:text-[#c89116]">
-            About
-          </Link>
-          <Link to="/work" onClick={handleLinkClick} className="hover:text-[#c89116]">
-            Work
-          </Link>
+          {!isHootsuitePage && (
+            <>
+              <Link to="/" onClick={handleLinkClick} className="hover:text-[#c89116]">
+                Home
+              </Link>
+              <Link to="/about" onClick={handleLinkClick} className="hover:text-[#c89116]">
+                About
+              </Link>
+              <Link to="/work" onClick={handleLinkClick} className="hover:text-[#c89116]">
+                Work
+              </Link>
+            </>
+          )}
 
           {/* Social Icons on mobile */}
           <div className="flex space-x-6 pt-2">

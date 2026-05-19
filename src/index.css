@@ -202,6 +202,39 @@ button:focus-visible {
 }
 
 /* ========================================
+   Hootsuite-Specific Styling (#E03035 - Red)
+   ======================================== */
+.hootsuite-accent {
+  color: #E03035;
+}
+
+.hootsuite-accent-hover:hover {
+  color: #E03035;
+}
+
+.hootsuite-text-primary {
+  color: #E03035;
+  opacity: 0.7;
+}
+
+.hootsuite-text-primary:hover {
+  color: #E03035;
+  opacity: 0.9;
+}
+
+.hootsuite-glow-sm {
+  filter: drop-shadow(0 0 8px #E03035);
+}
+
+.hootsuite-glow {
+  filter: drop-shadow(0 0 12px #E03035);
+}
+
+.hootsuite-glow-lg {
+  filter: drop-shadow(0 0 20px #E03035);
+}
+
+/* ========================================
    Absorb-Specific Styling (#ffd33d - Golden Yellow)
    ======================================== */
 .absorb-accent {
