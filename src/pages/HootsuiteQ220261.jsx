@@ -10,7 +10,7 @@ export default function HootsuiteQ220261() {
         >
             <motion.p
               className="
-                text-4xl md:text-7xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
+                text-4xl md:text-7xl max-w-5xl mx-auto font-semibold mb-1 opacity-90 pb-5
                 text-[#E03035]/70
                 drop-shadow-[0_0_12px_#E03035]
                 transition-all duration-500 ease-out

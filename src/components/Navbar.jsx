@@ -83,7 +83,14 @@ import logo from "../assets/RM.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isHootsuitePage = location.pathname.toLowerCase().startsWith('/hootsuiteq220');
+  const hidePrimaryLinks = [
+    '/hootsuiteq220',
+    '/colabq220',
+    '/absorbq220',
+    '/clioq220',
+    '/quoq220',
+    '/spareq220',
+  ].some((prefix) => location.pathname.toLowerCase().startsWith(prefix));
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -98,7 +105,7 @@ export default function Navbar() {
 
       {/* Desktop nav links */}
       <div className="hidden md:flex items-center">
-        {!isHootsuitePage && (
+        {!hidePrimaryLinks && (
           <div className="flex space-x-4">
             <Link to="/" className="hover:text-[#c89116] transition-colors">Home</Link>
             <Link to="/about" className="hover:text-[#c89116] transition-colors">About</Link>
@@ -152,7 +159,7 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center py-4 space-y-4">
-          {!isHootsuitePage && (
+          {!hidePrimaryLinks && (
             <>
               <Link to="/" onClick={handleLinkClick} className="hover:text-[#c89116]">
                 Home

@@ -10,7 +10,7 @@ export default function AbsorbQ220261() {
         >
             <motion.p
               className="
-                text-4xl md:text-6xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
+                text-4xl md:text-6xl max-w-5xl mx-auto font-semibold mb-1 opacity-90 pb-5
                 text-[#edfc47]/70
                 drop-shadow-[0_0_12px_#edfc47]
                 transition-all duration-500 ease-out

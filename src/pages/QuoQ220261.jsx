@@ -32,7 +32,7 @@ export default function QuoQ220261() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <iframe
-                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
+                src="https://www.loom.com/embed/38fe7691afc343878474747cf70fb231?t=00hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
                 frameBorder="0"
                 allowFullScreen
                 loading="lazy"
@@ -40,7 +40,6 @@ export default function QuoQ220261() {
               ></iframe>
             </motion.div>
           </div>
-
           <motion.p
               className="
                 text-4xl md:text-5xl max-w-8xl mx-auto font-semibold mb-1 opacity-90 pb-5 text-center

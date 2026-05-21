@@ -10,7 +10,7 @@ export default function SpareQ220261() {
         >
             <motion.p
               className="
-                text-4xl md:text-7xl max-w-3xl mx-auto font-semibold mb-1 opacity-90 pb-5
+                text-4xl md:text-7xl max-w-5xl mx-auto font-semibold mb-1 opacity-90 pb-5
                 text-[#edfc47]/70
                 drop-shadow-[0_0_12px_#edfc47]
                 transition-all duration-500 ease-out
@@ -32,7 +32,7 @@ export default function SpareQ220261() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <iframe
-                src="https://www.loom.com/embed/4f809b7e16a14ce9af7680d0ff244f18?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
+                src="https://www.loom.com/embed/4eb0bb1f577b45b8ae1acdf11f818428?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
                 frameBorder="0"
                 allowFullScreen
                 loading="lazy"
@@ -53,7 +53,7 @@ export default function SpareQ220261() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              Candidate Presentation - Customer Onboarding Manager
+              Candidate Presentation - Implementation Manager
             </motion.p>
             
 
