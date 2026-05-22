@@ -53,7 +53,7 @@ export default function ClioQ220261() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              Candidate Presentation - Customer Onboarding Manager
+              Candidate Presentation - Customer Onboarding Specialist
             </motion.p>
             
 
