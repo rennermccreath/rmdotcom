@@ -90,6 +90,7 @@ export default function Navbar() {
     '/clioq220',
     '/quoq220',
     '/spareq220',
+    '/caribouq220',
   ].some((prefix) => location.pathname.toLowerCase().startsWith(prefix));
 
   const handleLinkClick = () => {

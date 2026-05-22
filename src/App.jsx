@@ -316,6 +316,16 @@ import QuoQ220266 from "./pages/QuoQ220266";
 import QuoQ220267 from "./pages/QuoQ220267";
 import QuoQ220268 from "./pages/QuoQ220268";
 
+// CaribouQ22026x
+import CaribouQ220261 from "./pages/CaribouQ220261";
+import CaribouQ220262 from "./pages/CaribouQ220262";
+import CaribouQ220263 from "./pages/CaribouQ220263";
+import CaribouQ220264 from "./pages/CaribouQ220264";
+import CaribouQ220265 from "./pages/CaribouQ220265";
+import CaribouQ220266 from "./pages/CaribouQ220266";
+import CaribouQ220267 from "./pages/CaribouQ220267";
+import CaribouQ220268 from "./pages/CaribouQ220268";
+
 // AbsorbQ22026x
 import AbsorbQ220261 from "./pages/AbsorbQ220261";
 import AbsorbQ220262 from "./pages/AbsorbQ220262";
@@ -360,6 +370,7 @@ import HootsuiteQ220268 from "./pages/HootsuiteQ220268";
 import background from "./assets/background.jpg";
 import background2 from "./assets/background2.png";
 import backgroundquo from "./assets/backgroundquo.png";
+import backgroundcaribou from "./assets/caribou.png";
 import backgroundabsorb from "./assets/absorb.png";
 import backgroundspare from "./assets/spare.png";
 import backgroundclio from "./assets/clio.png";
@@ -400,6 +411,9 @@ export default function App() {
   // Check if current route is a quo page
   const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220');
   
+  // Check if current route is a caribou page
+  const isCaribouPage = location.pathname.toLowerCase().startsWith('/caribouq220');
+  
   // Conditional background classes
   let backgroundClasses;
   if (isAbsorbPage) {
@@ -414,6 +428,8 @@ export default function App() {
     backgroundClasses = "bg-[url('./assets/hootsuite.png')] sm:bg-[url('/src/assets/hootsuite.png')] lg:bg-[url('./assets/hootsuite.png')]";
   } else if (isQuoPage) {
     backgroundClasses = "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]";
+  } else if (isCaribouPage) {
+    backgroundClasses = "bg-[url('./assets/caribou.png')] sm:bg-[url('/src/assets/caribou.png')] lg:bg-[url('/src/assets/caribou.png')]";
   } else {
     backgroundClasses = "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
   }
@@ -481,6 +497,16 @@ export default function App() {
               <Route path="/quoq220266" element={<PageWrapper><QuoQ220266 /></PageWrapper>} />
               <Route path="/quoq220267" element={<PageWrapper><QuoQ220267 /></PageWrapper>} />
               <Route path="/quoq220268" element={<PageWrapper><QuoQ220268 /></PageWrapper>} />
+
+              {/* CaribouQ22026x */}
+              <Route path="/caribouq220261" element={<PageWrapper><CaribouQ220261 /></PageWrapper>} />
+              <Route path="/caribouq220262" element={<PageWrapper><CaribouQ220262 /></PageWrapper>} />
+              <Route path="/caribouq220263" element={<PageWrapper><CaribouQ220263 /></PageWrapper>} />
+              <Route path="/caribouq220264" element={<PageWrapper><CaribouQ220264 /></PageWrapper>} />
+              <Route path="/caribouq220265" element={<PageWrapper><CaribouQ220265 /></PageWrapper>} />
+              <Route path="/caribouq220266" element={<PageWrapper><CaribouQ220266 /></PageWrapper>} />
+              <Route path="/caribouq220267" element={<PageWrapper><CaribouQ220267 /></PageWrapper>} />
+              <Route path="/caribouq220268" element={<PageWrapper><CaribouQ220268 /></PageWrapper>} />
 
               {/* ClioQ22026x */}
               <Route path="/clioq220261" element={<PageWrapper><ClioQ220261 /></PageWrapper>} />
