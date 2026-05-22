@@ -32,7 +32,7 @@ export default function ClioQ220261() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <iframe
-                src="https://www.loom.com/embed/372def5a6e8d4ea689bef953d0bcd6fe?hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
+                src="https://www.loom.com/embed/e80f88008157460da3293921b1b3733b?t=00hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true"
                 frameBorder="0"
                 allowFullScreen
                 loading="lazy"
