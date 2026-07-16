@@ -299,3 +299,43 @@ button:focus-visible {
 .spare-glow-lg {
   filter: drop-shadow(0 0 20px #ffd56a);
 }
+
+/* ========================================
+   Learnwise-Specific Styling (#cf5148 - Coral)
+   ======================================== */
+.learnwise-accent {
+  color: #cf5148;
+}
+
+.learnwise-accent-hover:hover {
+  color: #cf5148;
+}
+
+.learnwise-text-primary {
+  color: #cf5148;
+  opacity: 0.7;
+}
+
+.learnwise-text-primary:hover {
+  color: #cf5148;
+  opacity: 0.9;
+}
+
+.learnwise-glow-sm {
+  filter: drop-shadow(0 0 8px #cf5148);
+}
+
+.learnwise-glow {
+  filter: drop-shadow(0 0 12px #cf5148);
+}
+
+.learnwise-glow-lg {
+  filter: drop-shadow(0 0 20px #cf5148);
+}
+
+.learnwise-page {
+  background-image: url("./assets/learnwise.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

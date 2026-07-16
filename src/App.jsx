@@ -297,74 +297,84 @@ import TestArticle10172025 from "./pages/TestArticle10172025";
 //Applications
 
 //CoLab
-import CoLabQ22026 from "./pages/CoLabQ22026";
-import CoLabQ220261 from "./pages/CoLabQ220261";
-import CoLabQ220262 from "./pages/CoLabQ220262";
-import CoLabQ220263 from "./pages/CoLabQ220263";
-import CoLabQ220264 from "./pages/CoLabQ220264";
-import CoLabQ220265 from "./pages/CoLabQ220265";
-import CoLabQ220266 from "./pages/CoLabQ220266";
-import CoLabQ220267 from "./pages/CoLabQ220267";
+import CoLabQ32026 from "./pages/CoLabQ32026";
+import CoLabQ320261 from "./pages/CoLabQ320261";
+import CoLabQ320262 from "./pages/CoLabQ320262";
+import CoLabQ320263 from "./pages/CoLabQ320263";
+import CoLabQ320264 from "./pages/CoLabQ320264";
+import CoLabQ320265 from "./pages/CoLabQ320265";
+import CoLabQ320266 from "./pages/CoLabQ320266";
+import CoLabQ320267 from "./pages/CoLabQ320267";
 
-// QuoQ22026x
-import QuoQ220261 from "./pages/QuoQ220261";
-import QuoQ220262 from "./pages/QuoQ220262";
-import QuoQ220263 from "./pages/QuoQ220263";
-import QuoQ220264 from "./pages/QuoQ220264";
-import QuoQ220265 from "./pages/QuoQ220265";
-import QuoQ220266 from "./pages/QuoQ220266";
-import QuoQ220267 from "./pages/QuoQ220267";
-import QuoQ220268 from "./pages/QuoQ220268";
+// QuoQ32026x
+import QuoQ320261 from "./pages/QuoQ320261";
+import QuoQ320262 from "./pages/QuoQ320262";
+import QuoQ320263 from "./pages/QuoQ320263";
+import QuoQ320264 from "./pages/QuoQ320264";
+import QuoQ320265 from "./pages/QuoQ320265";
+import QuoQ320266 from "./pages/QuoQ320266";
+import QuoQ320267 from "./pages/QuoQ320267";
+import QuoQ320268 from "./pages/QuoQ320268";
 
-// CaribouQ22026x
-import CaribouQ220261 from "./pages/CaribouQ220261";
-import CaribouQ220262 from "./pages/CaribouQ220262";
-import CaribouQ220263 from "./pages/CaribouQ220263";
-import CaribouQ220264 from "./pages/CaribouQ220264";
-import CaribouQ220265 from "./pages/CaribouQ220265";
-import CaribouQ220266 from "./pages/CaribouQ220266";
-import CaribouQ220267 from "./pages/CaribouQ220267";
-import CaribouQ220268 from "./pages/CaribouQ220268";
+// CaribouQ32026x
+import CaribouQ320261 from "./pages/CaribouQ320261";
+import CaribouQ320262 from "./pages/CaribouQ320262";
+import CaribouQ320263 from "./pages/CaribouQ320263";
+import CaribouQ320264 from "./pages/CaribouQ320264";
+import CaribouQ320265 from "./pages/CaribouQ320265";
+import CaribouQ320266 from "./pages/CaribouQ320266";
+import CaribouQ320267 from "./pages/CaribouQ320267";
+import CaribouQ320268 from "./pages/CaribouQ320268";
 
-// AbsorbQ22026x
-import AbsorbQ220261 from "./pages/AbsorbQ220261";
-import AbsorbQ220262 from "./pages/AbsorbQ220262";
-import AbsorbQ220263 from "./pages/AbsorbQ220263";
-import AbsorbQ220264 from "./pages/AbsorbQ220264";
-import AbsorbQ220265 from "./pages/AbsorbQ220265";
-import AbsorbQ220266 from "./pages/AbsorbQ220266";
-import AbsorbQ220267 from "./pages/AbsorbQ220267";
-import AbsorbQ220268 from "./pages/AbsorbQ220268";
+// LearnwiseQ32026x
+import LearnwiseQ320261 from "./pages/LearnwiseQ320261";
+import LearnwiseQ320262 from "./pages/LearnwiseQ320262";
+import LearnwiseQ320263 from "./pages/LearnwiseQ320263";
+import LearnwiseQ320264 from "./pages/LearnwiseQ320264";
+import LearnwiseQ320265 from "./pages/LearnwiseQ320265";
+import LearnwiseQ320266 from "./pages/LearnwiseQ320266";
+import LearnwiseQ320267 from "./pages/LearnwiseQ320267";
+import LearnwiseQ320268 from "./pages/LearnwiseQ320268";
 
-// SpareQ22026x
-import SpareQ220261 from "./pages/SpareQ220261";
-import SpareQ220262 from "./pages/SpareQ220262";
-import SpareQ220263 from "./pages/SpareQ220263";
-import SpareQ220264 from "./pages/SpareQ220264";
-import SpareQ220265 from "./pages/SpareQ220265";
-import SpareQ220266 from "./pages/SpareQ220266";
-import SpareQ220267 from "./pages/SpareQ220267";
-import SpareQ220268 from "./pages/SpareQ220268";
+// AbsorbQ32026x
+import AbsorbQ320261 from "./pages/AbsorbQ320261";
+import AbsorbQ320262 from "./pages/AbsorbQ320262";
+import AbsorbQ320263 from "./pages/AbsorbQ320263";
+import AbsorbQ320264 from "./pages/AbsorbQ320264";
+import AbsorbQ320265 from "./pages/AbsorbQ320265";
+import AbsorbQ320266 from "./pages/AbsorbQ320266";
+import AbsorbQ320267 from "./pages/AbsorbQ320267";
+import AbsorbQ320268 from "./pages/AbsorbQ320268";
 
-// ClioQ22026x
-import ClioQ220261 from "./pages/ClioQ220261";
-import ClioQ220262 from "./pages/ClioQ220262";
-import ClioQ220263 from "./pages/ClioQ220263";
-import ClioQ220264 from "./pages/ClioQ220264";
-import ClioQ220265 from "./pages/ClioQ220265";
-import ClioQ220266 from "./pages/ClioQ220266";
-import ClioQ220267 from "./pages/ClioQ220267";
-import ClioQ220268 from "./pages/ClioQ220268";
+// SpareQ32026x
+import SpareQ320261 from "./pages/SpareQ320261";
+import SpareQ320262 from "./pages/SpareQ320262";
+import SpareQ320263 from "./pages/SpareQ320263";
+import SpareQ320264 from "./pages/SpareQ320264";
+import SpareQ320265 from "./pages/SpareQ320265";
+import SpareQ320266 from "./pages/SpareQ320266";
+import SpareQ320267 from "./pages/SpareQ320267";
+import SpareQ320268 from "./pages/SpareQ320268";
 
-// HootsuiteQ22026x
-import HootsuiteQ220261 from "./pages/HootsuiteQ220261";
-import HootsuiteQ220262 from "./pages/HootsuiteQ220262";
-import HootsuiteQ220263 from "./pages/HootsuiteQ220263";
-import HootsuiteQ220264 from "./pages/HootsuiteQ220264";
-import HootsuiteQ220265 from "./pages/HootsuiteQ220265";
-import HootsuiteQ220266 from "./pages/HootsuiteQ220266";
-import HootsuiteQ220267 from "./pages/HootsuiteQ220267";
-import HootsuiteQ220268 from "./pages/HootsuiteQ220268";
+// ClioQ32026x
+import ClioQ320261 from "./pages/ClioQ320261";
+import ClioQ320262 from "./pages/ClioQ320262";
+import ClioQ320263 from "./pages/ClioQ320263";
+import ClioQ320264 from "./pages/ClioQ320264";
+import ClioQ320265 from "./pages/ClioQ320265";
+import ClioQ320266 from "./pages/ClioQ320266";
+import ClioQ320267 from "./pages/ClioQ320267";
+import ClioQ320268 from "./pages/ClioQ320268";
+
+// HootsuiteQ32026x
+import HootsuiteQ320261 from "./pages/HootsuiteQ320261";
+import HootsuiteQ320262 from "./pages/HootsuiteQ320262";
+import HootsuiteQ320263 from "./pages/HootsuiteQ320263";
+import HootsuiteQ320264 from "./pages/HootsuiteQ320264";
+import HootsuiteQ320265 from "./pages/HootsuiteQ320265";
+import HootsuiteQ320266 from "./pages/HootsuiteQ320266";
+import HootsuiteQ320267 from "./pages/HootsuiteQ320267";
+import HootsuiteQ320268 from "./pages/HootsuiteQ320268";
 
 // Assets
 import background from "./assets/background.jpg";
@@ -376,6 +386,7 @@ import backgroundspare from "./assets/spare.png";
 import backgroundclio from "./assets/clio.png";
 import backgroundcolab from "./assets/colab.png";
 import backgroundhootsuite from "./assets/hootsuite.png";
+import backgroundlearnwise from "./assets/learnwise.png";
 
 // ✅ Reusable transition wrapper
 const PageWrapper = ({ children }) => (
@@ -394,25 +405,28 @@ export default function App() {
   const location = useLocation();
   
   // Check if current route is an absorb page
-  const isAbsorbPage = location.pathname.toLowerCase().startsWith('/absorbq220');
+  const isAbsorbPage = location.pathname.toLowerCase().startsWith('/absorbq320');
   
   // Check if current route is a spare page
-  const isSparePage = location.pathname.toLowerCase().startsWith('/spareq220');
+  const isSparePage = location.pathname.toLowerCase().startsWith('/spareq320');
   
   // Check if current route is a clio page
-  const isClioPage = location.pathname.toLowerCase().startsWith('/clioq220');
+  const isClioPage = location.pathname.toLowerCase().startsWith('/clioq320');
   
   // Check if current route is a colab page
-  const isColabPage = location.pathname.toLowerCase().startsWith('/colabq220');
+  const isColabPage = location.pathname.toLowerCase().startsWith('/colabq320');
   
   // Check if current route is a hootsuite page
-  const isHootsuitePage = location.pathname.toLowerCase().startsWith('/hootsuiteq220');
+  const isHootsuitePage = location.pathname.toLowerCase().startsWith('/hootsuiteq320');
   
   // Check if current route is a quo page
-  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq220');
+  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq320');
   
   // Check if current route is a caribou page
-  const isCaribouPage = location.pathname.toLowerCase().startsWith('/caribouq220');
+  const isCaribouPage = location.pathname.toLowerCase().startsWith('/caribouq320');
+
+  // Check if current route is a learnwise page
+  const isLearnwisePage = location.pathname.toLowerCase().startsWith('/learnwiseq320');
   
   // Conditional background classes
   let backgroundClasses;
@@ -430,6 +444,8 @@ export default function App() {
     backgroundClasses = "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]";
   } else if (isCaribouPage) {
     backgroundClasses = "bg-[url('./assets/caribou.png')] sm:bg-[url('/src/assets/caribou.png')] lg:bg-[url('/src/assets/caribou.png')]";
+  } else if (isLearnwisePage) {
+    backgroundClasses = "bg-[url('./assets/learnwise.png')] sm:bg-[url('/src/assets/learnwise.png')] lg:bg-[url('/src/assets/learnwise.png')]";
   } else {
     backgroundClasses = "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
   }
@@ -479,74 +495,84 @@ export default function App() {
               {/* Applications */}
 
               {/* CoLab */}
-              <Route path="/colabq22026" element={<PageWrapper><CoLabQ22026 /></PageWrapper>} />
-              <Route path="/colabq220261" element={<PageWrapper><CoLabQ220261 /></PageWrapper>} />
-              <Route path="/colabq220262" element={<PageWrapper><CoLabQ220262 /></PageWrapper>} />
-              <Route path="/colabq220263" element={<PageWrapper><CoLabQ220263 /></PageWrapper>} />
-              <Route path="/colabq220264" element={<PageWrapper><CoLabQ220264 /></PageWrapper>} />
-              <Route path="/colabq220265" element={<PageWrapper><CoLabQ220265 /></PageWrapper>} />
-              <Route path="/colabq220266" element={<PageWrapper><CoLabQ220266 /></PageWrapper>} />
-              <Route path="/colabq220267" element={<PageWrapper><CoLabQ220267 /></PageWrapper>} />
+              <Route path="/colabQ32026" element={<PageWrapper><CoLabQ32026 /></PageWrapper>} />
+              <Route path="/colabQ320261" element={<PageWrapper><CoLabQ320261 /></PageWrapper>} />
+              <Route path="/colabQ320262" element={<PageWrapper><CoLabQ320262 /></PageWrapper>} />
+              <Route path="/colabQ320263" element={<PageWrapper><CoLabQ320263 /></PageWrapper>} />
+              <Route path="/colabQ320264" element={<PageWrapper><CoLabQ320264 /></PageWrapper>} />
+              <Route path="/colabQ320265" element={<PageWrapper><CoLabQ320265 /></PageWrapper>} />
+              <Route path="/colabQ320266" element={<PageWrapper><CoLabQ320266 /></PageWrapper>} />
+              <Route path="/colabQ320267" element={<PageWrapper><CoLabQ320267 /></PageWrapper>} />
 
-              {/* QuoQ22026x */}
-              <Route path="/quoq220261" element={<PageWrapper><QuoQ220261 /></PageWrapper>} />
-              <Route path="/quoq220262" element={<PageWrapper><QuoQ220262 /></PageWrapper>} />
-              <Route path="/quoq220263" element={<PageWrapper><QuoQ220263 /></PageWrapper>} />
-              <Route path="/quoq220264" element={<PageWrapper><QuoQ220264 /></PageWrapper>} />
-              <Route path="/quoq220265" element={<PageWrapper><QuoQ220265 /></PageWrapper>} />
-              <Route path="/quoq220266" element={<PageWrapper><QuoQ220266 /></PageWrapper>} />
-              <Route path="/quoq220267" element={<PageWrapper><QuoQ220267 /></PageWrapper>} />
-              <Route path="/quoq220268" element={<PageWrapper><QuoQ220268 /></PageWrapper>} />
+              {/* QuoQ32026x */}
+              <Route path="/quoQ320261" element={<PageWrapper><QuoQ320261 /></PageWrapper>} />
+              <Route path="/quoQ320262" element={<PageWrapper><QuoQ320262 /></PageWrapper>} />
+              <Route path="/quoQ320263" element={<PageWrapper><QuoQ320263 /></PageWrapper>} />
+              <Route path="/quoQ320264" element={<PageWrapper><QuoQ320264 /></PageWrapper>} />
+              <Route path="/quoQ320265" element={<PageWrapper><QuoQ320265 /></PageWrapper>} />
+              <Route path="/quoQ320266" element={<PageWrapper><QuoQ320266 /></PageWrapper>} />
+              <Route path="/quoQ320267" element={<PageWrapper><QuoQ320267 /></PageWrapper>} />
+              <Route path="/quoQ320268" element={<PageWrapper><QuoQ320268 /></PageWrapper>} />
 
-              {/* CaribouQ22026x */}
-              <Route path="/caribouq220261" element={<PageWrapper><CaribouQ220261 /></PageWrapper>} />
-              <Route path="/caribouq220262" element={<PageWrapper><CaribouQ220262 /></PageWrapper>} />
-              <Route path="/caribouq220263" element={<PageWrapper><CaribouQ220263 /></PageWrapper>} />
-              <Route path="/caribouq220264" element={<PageWrapper><CaribouQ220264 /></PageWrapper>} />
-              <Route path="/caribouq220265" element={<PageWrapper><CaribouQ220265 /></PageWrapper>} />
-              <Route path="/caribouq220266" element={<PageWrapper><CaribouQ220266 /></PageWrapper>} />
-              <Route path="/caribouq220267" element={<PageWrapper><CaribouQ220267 /></PageWrapper>} />
-              <Route path="/caribouq220268" element={<PageWrapper><CaribouQ220268 /></PageWrapper>} />
+              {/* CaribouQ32026x */}
+              <Route path="/caribouQ320261" element={<PageWrapper><CaribouQ320261 /></PageWrapper>} />
+              <Route path="/caribouQ320262" element={<PageWrapper><CaribouQ320262 /></PageWrapper>} />
+              <Route path="/caribouQ320263" element={<PageWrapper><CaribouQ320263 /></PageWrapper>} />
+              <Route path="/caribouQ320264" element={<PageWrapper><CaribouQ320264 /></PageWrapper>} />
+              <Route path="/caribouQ320265" element={<PageWrapper><CaribouQ320265 /></PageWrapper>} />
+              <Route path="/caribouQ320266" element={<PageWrapper><CaribouQ320266 /></PageWrapper>} />
+              <Route path="/caribouQ320267" element={<PageWrapper><CaribouQ320267 /></PageWrapper>} />
+              <Route path="/caribouQ320268" element={<PageWrapper><CaribouQ320268 /></PageWrapper>} />
 
-              {/* ClioQ22026x */}
-              <Route path="/clioq220261" element={<PageWrapper><ClioQ220261 /></PageWrapper>} />
-              <Route path="/clioq220262" element={<PageWrapper><ClioQ220262 /></PageWrapper>} />
-              <Route path="/clioq220263" element={<PageWrapper><ClioQ220263 /></PageWrapper>} />
-              <Route path="/clioq220264" element={<PageWrapper><ClioQ220264 /></PageWrapper>} />
-              <Route path="/clioq220265" element={<PageWrapper><ClioQ220265 /></PageWrapper>} />
-              <Route path="/clioq220266" element={<PageWrapper><ClioQ220266 /></PageWrapper>} />
-              <Route path="/clioq220267" element={<PageWrapper><ClioQ220267 /></PageWrapper>} />
-              <Route path="/clioq220268" element={<PageWrapper><ClioQ220268 /></PageWrapper>} />
+              {/* LearnwiseQ32026x */}
+              <Route path="/learnwiseQ320261" element={<PageWrapper><LearnwiseQ320261 /></PageWrapper>} />
+              <Route path="/learnwiseQ320262" element={<PageWrapper><LearnwiseQ320262 /></PageWrapper>} />
+              <Route path="/learnwiseQ320263" element={<PageWrapper><LearnwiseQ320263 /></PageWrapper>} />
+              <Route path="/learnwiseQ320264" element={<PageWrapper><LearnwiseQ320264 /></PageWrapper>} />
+              <Route path="/learnwiseQ320265" element={<PageWrapper><LearnwiseQ320265 /></PageWrapper>} />
+              <Route path="/learnwiseQ320266" element={<PageWrapper><LearnwiseQ320266 /></PageWrapper>} />
+              <Route path="/learnwiseQ320267" element={<PageWrapper><LearnwiseQ320267 /></PageWrapper>} />
+              <Route path="/learnwiseQ320268" element={<PageWrapper><LearnwiseQ320268 /></PageWrapper>} />
 
-              {/* HootsuiteQ22026x */}
-              <Route path="/hootsuiteq220261" element={<PageWrapper><HootsuiteQ220261 /></PageWrapper>} />
-              <Route path="/hootsuiteq220262" element={<PageWrapper><HootsuiteQ220262 /></PageWrapper>} />
-              <Route path="/hootsuiteq220263" element={<PageWrapper><HootsuiteQ220263 /></PageWrapper>} />
-              <Route path="/hootsuiteq220264" element={<PageWrapper><HootsuiteQ220264 /></PageWrapper>} />
-              <Route path="/hootsuiteq220265" element={<PageWrapper><HootsuiteQ220265 /></PageWrapper>} />
-              <Route path="/hootsuiteq220266" element={<PageWrapper><HootsuiteQ220266 /></PageWrapper>} />
-              <Route path="/hootsuiteq220267" element={<PageWrapper><HootsuiteQ220267 /></PageWrapper>} />
-              <Route path="/hootsuiteq220268" element={<PageWrapper><HootsuiteQ220268 /></PageWrapper>} />
+              {/* ClioQ32026x */}
+              <Route path="/clioQ320261" element={<PageWrapper><ClioQ320261 /></PageWrapper>} />
+              <Route path="/clioQ320262" element={<PageWrapper><ClioQ320262 /></PageWrapper>} />
+              <Route path="/clioQ320263" element={<PageWrapper><ClioQ320263 /></PageWrapper>} />
+              <Route path="/clioQ320264" element={<PageWrapper><ClioQ320264 /></PageWrapper>} />
+              <Route path="/clioQ320265" element={<PageWrapper><ClioQ320265 /></PageWrapper>} />
+              <Route path="/clioQ320266" element={<PageWrapper><ClioQ320266 /></PageWrapper>} />
+              <Route path="/clioQ320267" element={<PageWrapper><ClioQ320267 /></PageWrapper>} />
+              <Route path="/clioQ320268" element={<PageWrapper><ClioQ320268 /></PageWrapper>} />
 
-              {/* AbsorbQ22026x */}
-              <Route path="/absorbq220261" element={<PageWrapper><AbsorbQ220261 /></PageWrapper>} />
-              <Route path="/absorbq220262" element={<PageWrapper><AbsorbQ220262 /></PageWrapper>} />
-              <Route path="/absorbq220263" element={<PageWrapper><AbsorbQ220263 /></PageWrapper>} />
-              <Route path="/absorbq220264" element={<PageWrapper><AbsorbQ220264 /></PageWrapper>} />
-              <Route path="/absorbq220265" element={<PageWrapper><AbsorbQ220265 /></PageWrapper>} />
-              <Route path="/absorbq220266" element={<PageWrapper><AbsorbQ220266 /></PageWrapper>} />
-              <Route path="/absorbq220267" element={<PageWrapper><AbsorbQ220267 /></PageWrapper>} />
-              <Route path="/absorbq220268" element={<PageWrapper><AbsorbQ220268 /></PageWrapper>} />
+              {/* HootsuiteQ32026x */}
+              <Route path="/hootsuiteQ320261" element={<PageWrapper><HootsuiteQ320261 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320262" element={<PageWrapper><HootsuiteQ320262 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320263" element={<PageWrapper><HootsuiteQ320263 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320264" element={<PageWrapper><HootsuiteQ320264 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320265" element={<PageWrapper><HootsuiteQ320265 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320266" element={<PageWrapper><HootsuiteQ320266 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320267" element={<PageWrapper><HootsuiteQ320267 /></PageWrapper>} />
+              <Route path="/hootsuiteQ320268" element={<PageWrapper><HootsuiteQ320268 /></PageWrapper>} />
 
-              {/* SpareQ22026x */}
-              <Route path="/spareq220261" element={<PageWrapper><SpareQ220261 /></PageWrapper>} />
-              <Route path="/spareq220262" element={<PageWrapper><SpareQ220262 /></PageWrapper>} />
-              <Route path="/spareq220263" element={<PageWrapper><SpareQ220263 /></PageWrapper>} />
-              <Route path="/spareq220264" element={<PageWrapper><SpareQ220264 /></PageWrapper>} />
-              <Route path="/spareq220265" element={<PageWrapper><SpareQ220265 /></PageWrapper>} />
-              <Route path="/spareq220266" element={<PageWrapper><SpareQ220266 /></PageWrapper>} />
-              <Route path="/spareq220267" element={<PageWrapper><SpareQ220267 /></PageWrapper>} />
-              <Route path="/spareq220268" element={<PageWrapper><SpareQ220268 /></PageWrapper>} />
+              {/* AbsorbQ32026x */}
+              <Route path="/absorbQ320261" element={<PageWrapper><AbsorbQ320261 /></PageWrapper>} />
+              <Route path="/absorbQ320262" element={<PageWrapper><AbsorbQ320262 /></PageWrapper>} />
+              <Route path="/absorbQ320263" element={<PageWrapper><AbsorbQ320263 /></PageWrapper>} />
+              <Route path="/absorbQ320264" element={<PageWrapper><AbsorbQ320264 /></PageWrapper>} />
+              <Route path="/absorbQ320265" element={<PageWrapper><AbsorbQ320265 /></PageWrapper>} />
+              <Route path="/absorbQ320266" element={<PageWrapper><AbsorbQ320266 /></PageWrapper>} />
+              <Route path="/absorbQ320267" element={<PageWrapper><AbsorbQ320267 /></PageWrapper>} />
+              <Route path="/absorbQ320268" element={<PageWrapper><AbsorbQ320268 /></PageWrapper>} />
+
+              {/* SpareQ32026x */}
+              <Route path="/spareQ320261" element={<PageWrapper><SpareQ320261 /></PageWrapper>} />
+              <Route path="/spareQ320262" element={<PageWrapper><SpareQ320262 /></PageWrapper>} />
+              <Route path="/spareQ320263" element={<PageWrapper><SpareQ320263 /></PageWrapper>} />
+              <Route path="/spareQ320264" element={<PageWrapper><SpareQ320264 /></PageWrapper>} />
+              <Route path="/spareQ320265" element={<PageWrapper><SpareQ320265 /></PageWrapper>} />
+              <Route path="/spareQ320266" element={<PageWrapper><SpareQ320266 /></PageWrapper>} />
+              <Route path="/spareQ320267" element={<PageWrapper><SpareQ320267 /></PageWrapper>} />
+              <Route path="/spareQ320268" element={<PageWrapper><SpareQ320268 /></PageWrapper>} />
 
             </Routes>
           </AnimatePresence>

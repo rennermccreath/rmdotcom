@@ -84,13 +84,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const hidePrimaryLinks = [
-    '/hootsuiteq220',
-    '/colabq220',
-    '/absorbq220',
-    '/clioq220',
-    '/quoq220',
-    '/spareq220',
-    '/caribouq220',
+    '/hootsuiteq320',
+    '/colabq320',
+    '/absorbq320',
+    '/clioq320',
+    '/quoq320',
+    '/spareq320',
+    '/caribouq320',
+    '/learnwiseq320',
   ].some((prefix) => location.pathname.toLowerCase().startsWith(prefix));
 
   const handleLinkClick = () => {
