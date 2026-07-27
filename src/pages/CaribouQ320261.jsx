@@ -52,7 +52,7 @@ export default function CaribouQ320261() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              Candidate Presentation - Senior Customer Success Associate, Strategic Markets
+              Candidate Presentation - Senior Customer Success Associate
             </motion.p>
             
 
