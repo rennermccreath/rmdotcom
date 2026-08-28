@@ -293,6 +293,8 @@ import ProjectManagement from "./pages/ProjectManagement";
 import Timeline from "./pages/Timeline";
 import Work from "./pages/Work";
 import TestArticle10172025 from "./pages/TestArticle10172025";
+import DigitalApplication from "./pages/DigitalApplication";
+import { legacyApplicationRoutes } from "./data/applications";
 
 //Applications
 
@@ -315,16 +317,6 @@ import QuoQ320265 from "./pages/QuoQ320265";
 import QuoQ320266 from "./pages/QuoQ320266";
 import QuoQ320267 from "./pages/QuoQ320267";
 import QuoQ320268 from "./pages/QuoQ320268";
-
-// CaribouQ32026x
-import CaribouQ320261 from "./pages/CaribouQ320261";
-import CaribouQ320262 from "./pages/CaribouQ320262";
-import CaribouQ320263 from "./pages/CaribouQ320263";
-import CaribouQ320264 from "./pages/CaribouQ320264";
-import CaribouQ320265 from "./pages/CaribouQ320265";
-import CaribouQ320266 from "./pages/CaribouQ320266";
-import CaribouQ320267 from "./pages/CaribouQ320267";
-import CaribouQ320268 from "./pages/CaribouQ320268";
 
 // LearnwiseQ32026x
 import LearnwiseQ320261 from "./pages/LearnwiseQ320261";
@@ -376,18 +368,6 @@ import HootsuiteQ320266 from "./pages/HootsuiteQ320266";
 import HootsuiteQ320267 from "./pages/HootsuiteQ320267";
 import HootsuiteQ320268 from "./pages/HootsuiteQ320268";
 
-// Assets
-import background from "./assets/background.jpg";
-import background2 from "./assets/background2.png";
-import backgroundquo from "./assets/backgroundquo.png";
-import backgroundcaribou from "./assets/caribou.png";
-import backgroundabsorb from "./assets/absorb.png";
-import backgroundspare from "./assets/spare.png";
-import backgroundclio from "./assets/clio.png";
-import backgroundcolab from "./assets/colab.png";
-import backgroundhootsuite from "./assets/hootsuite.png";
-import backgroundlearnwise from "./assets/learnwise.png";
-
 // ✅ Reusable transition wrapper
 const PageWrapper = ({ children }) => (
   <motion.div
@@ -423,7 +403,9 @@ export default function App() {
   const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq320');
   
   // Check if current route is a caribou page
-  const isCaribouPage = location.pathname.toLowerCase().startsWith('/caribouq320');
+  const isCaribouPage =
+    location.pathname.toLowerCase().startsWith('/caribouq320') ||
+    location.pathname.toLowerCase().startsWith('/applications/caribou-');
 
   // Check if current route is a learnwise page
   const isLearnwisePage = location.pathname.toLowerCase().startsWith('/learnwiseq320');
@@ -514,15 +496,20 @@ export default function App() {
               <Route path="/quoQ320267" element={<PageWrapper><QuoQ320267 /></PageWrapper>} />
               <Route path="/quoQ320268" element={<PageWrapper><QuoQ320268 /></PageWrapper>} />
 
-              {/* CaribouQ32026x */}
-              <Route path="/caribouQ320261" element={<PageWrapper><CaribouQ320261 /></PageWrapper>} />
-              <Route path="/caribouQ320262" element={<PageWrapper><CaribouQ320262 /></PageWrapper>} />
-              <Route path="/caribouQ320263" element={<PageWrapper><CaribouQ320263 /></PageWrapper>} />
-              <Route path="/caribouQ320264" element={<PageWrapper><CaribouQ320264 /></PageWrapper>} />
-              <Route path="/caribouQ320265" element={<PageWrapper><CaribouQ320265 /></PageWrapper>} />
-              <Route path="/caribouQ320266" element={<PageWrapper><CaribouQ320266 /></PageWrapper>} />
-              <Route path="/caribouQ320267" element={<PageWrapper><CaribouQ320267 /></PageWrapper>} />
-              <Route path="/caribouQ320268" element={<PageWrapper><CaribouQ320268 /></PageWrapper>} />
+              {/* Data-driven applications */}
+              <Route path="/applications/:slug" element={<PageWrapper><DigitalApplication /></PageWrapper>} />
+              <Route path="/applications/:slug/:section" element={<PageWrapper><DigitalApplication /></PageWrapper>} />
+              {Object.entries(legacyApplicationRoutes).map(([path, target]) => (
+                <Route
+                  key={path}
+                  path={path}
+                  element={
+                    <PageWrapper>
+                      <DigitalApplication legacySlug={target.slug} legacySection={target.section} />
+                    </PageWrapper>
+                  }
+                />
+              ))}
 
               {/* LearnwiseQ32026x */}
               <Route path="/learnwiseQ320261" element={<PageWrapper><LearnwiseQ320261 /></PageWrapper>} />
