@@ -39,5 +39,24 @@ export function normalizeVideo(value) {
   const loomUrl = getLoomEmbedUrl(value);
   if (loomUrl) return { provider: "loom", embedUrl: loomUrl };
 
+  try {
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, "");
+
+    if (host === "youtu.be" || host.endsWith("youtube.com")) {
+      const videoId = host === "youtu.be" ? url.pathname.slice(1) : url.searchParams.get("v");
+      if (videoId) return { provider: "youtube", embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}` };
+    }
+
+    if (host === "vimeo.com" || host === "player.vimeo.com") {
+      const videoId = url.pathname.split("/").filter(Boolean).at(-1);
+      if (/^\d+$/.test(videoId)) return { provider: "vimeo", embedUrl: `https://player.vimeo.com/video/${videoId}` };
+    }
+
+    if (/\.(mp4|webm|ogg)$/i.test(url.pathname)) return { provider: "file", src: url.toString() };
+  } catch {
+    // An invalid or unsupported URL is rendered as a safe external link below.
+  }
+
   return { provider: "link", href: value };
 }

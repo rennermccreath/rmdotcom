@@ -36,7 +36,7 @@ function VideoSection({ section, application }) {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="aspect-video overflow-hidden rounded-lg border border-white/10 bg-black/60 shadow-2xl">
-          {video.provider === "loom" ? (
+          {["loom", "youtube", "vimeo"].includes(video.provider) ? (
             <iframe
               src={video.embedUrl}
               title={`${application.company} ${application.role} candidate video`}
@@ -45,6 +45,11 @@ function VideoSection({ section, application }) {
               loading="lazy"
               className="h-full w-full"
             />
+          ) : video.provider === "file" ? (
+            <video className="h-full w-full" controls preload="metadata">
+              <source src={video.src} />
+              Your browser does not support embedded video.
+            </video>
           ) : (
             <a className="flex h-full items-center justify-center underline" href={video.href}>
               Watch candidate video

@@ -18,8 +18,12 @@ The application is available at:
 /applications/{slug}/{section-id}
 ```
 
-Supported section types are `video`, `metrics`, and `timeline`. Employer styling belongs in the
+Supported section types are `video`, `metrics`, and `timeline`. The standard application flow intentionally
+does not include a `numbers` page. Employer styling belongs in the
 application record; reusable layout and behaviour belong in `DigitalApplication.jsx`.
+
+Use `.github/prompts/create-digital-application.prompt.md` in VS Code agent mode to turn a job posting into
+a preflight summary, application configuration, and role-specific video scripts.
 
 ## Content guardrails
 

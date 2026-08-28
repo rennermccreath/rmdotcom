@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "validate:applications": "node scripts/validate-applications.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

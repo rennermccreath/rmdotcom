@@ -1,6 +1,7 @@
-import { caribouApplication } from "./caribou-senior-customer-success-associate";
+import { caribouApplication } from "./caribou-senior-customer-success-associate.js";
+import { migratedApplications } from "./migratedApplications.js";
 
-export const applications = [caribouApplication];
+export const applications = [caribouApplication, ...migratedApplications];
 
 export const applicationsBySlug = Object.fromEntries(
   applications.map((application) => [application.slug, application]),
