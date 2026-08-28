@@ -33,7 +33,7 @@ Stop if the company, title, posting, brand source, or evidence is ambiguous. Nev
 3. Reuse `welcome`, `foundation`, `experience`, and `why`; do not add a `numbers` section.
 4. Keep application-specific facts in data and reusable behaviour in components/utilities.
 5. Supply an ordinary provider share URL. Never manually build an embed query string.
-6. Use the official employer colour only as an accent inside Renner's established portfolio design.
+6. Use official employer colours for the application `gradient` array and accent. Reuse the shared transparent portrait; do not generate or add a flattened company background image.
 7. Do not add dates, quarters, or arbitrary numbers to the public URL.
 
 ## Video scripts

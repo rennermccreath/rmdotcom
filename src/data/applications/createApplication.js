@@ -24,11 +24,15 @@ function createLegacyRoutes(prefix, welcomeSuffix = 1, lastSuffix = 8, firstSect
   return routes;
 }
 
-export function createApplication({ slug, company, role, accent, background, welcomeVideo, whyVideo, legacyPrefix, legacyWelcomeSuffix = 1, legacyLastSuffix = 8, legacyFirstSectionIndex = 0, legacyWelcomePath }) {
+export function createApplication({ slug, company, role, accent, gradient, portraitOpacity = 0.52, welcomeVideo, whyVideo, legacyPrefix, legacyWelcomeSuffix = 1, legacyLastSuffix = 8, legacyFirstSectionIndex = 0, legacyWelcomePath }) {
   const legacyRoutes = createLegacyRoutes(legacyPrefix, legacyWelcomeSuffix, legacyLastSuffix, legacyFirstSectionIndex);
   if (legacyWelcomePath) legacyRoutes[legacyWelcomePath] = "welcome";
   return {
-    slug, company, role, accent, background,
+    slug,
+    company,
+    role,
+    accent,
+    theme: { gradient, portraitOpacity },
     sections: [
       { id: "welcome", type: "video", heading: `Renner McCreath 🤝 ${company}`, subheading: `Candidate Presentation — ${role}`, videoUrl: welcomeVideo, compact: true },
       { id: "foundation", type: "metrics", heading: "The Foundation to Deliver Results", items: foundationItems },

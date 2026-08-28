@@ -13,6 +13,12 @@ for (const application of applications) {
   if (slugs.has(application.slug)) errors.push(`Duplicate slug: ${application.slug}.`);
   slugs.add(application.slug);
 
+  if (!Array.isArray(application.theme?.gradient) || application.theme.gradient.length < 2) {
+    errors.push(`${application.company}: theme requires at least two CSS gradient colours.`);
+  } else if (application.theme.gradient.some((color) => !/^#[0-9a-f]{6}$/i.test(color))) {
+    errors.push(`${application.company}: theme contains an invalid hex colour.`);
+  }
+
   const sectionIds = application.sections.map(({ id }) => id);
   if (sectionIds.join(",") !== requiredSections.join(",")) {
     errors.push(`${application.company}: expected sections ${requiredSections.join(", ")}; received ${sectionIds.join(", ")}.`);

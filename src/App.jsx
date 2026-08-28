@@ -294,7 +294,8 @@ import Timeline from "./pages/Timeline";
 import Work from "./pages/Work";
 import TestArticle10172025 from "./pages/TestArticle10172025";
 import DigitalApplication from "./pages/DigitalApplication";
-import { legacyApplicationRoutes } from "./data/applications";
+import { applicationsBySlug, legacyApplicationRoutes } from "./data/applications";
+import rennerPortrait from "./assets/renner-portrait.webp";
 
 //Applications
 
@@ -311,56 +312,26 @@ const PageWrapper = ({ children }) => (
   </motion.div>
 );
 
+function createGradient(colors) {
+  const lastIndex = colors.length - 1;
+  const stops = colors.map((color, index) => `${color} ${(index / lastIndex) * 100}%`);
+  return `linear-gradient(110deg, ${stops.join(", ")})`;
+}
+
 export default function App() {
   const location = useLocation();
   
-  // Check if current route is an absorb page
-  const isAbsorbPage = location.pathname.toLowerCase().startsWith('/absorbq320') || location.pathname.toLowerCase().startsWith('/applications/absorb-');
-  
-  // Check if current route is a spare page
-  const isSparePage = location.pathname.toLowerCase().startsWith('/spareq320') || location.pathname.toLowerCase().startsWith('/applications/spare-');
-  
-  // Check if current route is a clio page
-  const isClioPage = location.pathname.toLowerCase().startsWith('/clioq320') || location.pathname.toLowerCase().startsWith('/applications/clio-');
-  
-  // Check if current route is a colab page
-  const isColabPage = location.pathname.toLowerCase().startsWith('/colabq320') || location.pathname.toLowerCase().startsWith('/applications/colab-');
-  
-  // Check if current route is a hootsuite page
-  const isHootsuitePage = location.pathname.toLowerCase().startsWith('/hootsuiteq320') || location.pathname.toLowerCase().startsWith('/applications/hootsuite-');
-  
-  // Check if current route is a quo page
-  const isQuoPage = location.pathname.toLowerCase().startsWith('/quoq320') || location.pathname.toLowerCase().startsWith('/applications/quo-');
-  
-  // Check if current route is a caribou page
-  const isCaribouPage =
-    location.pathname.toLowerCase().startsWith('/caribouq320') ||
-    location.pathname.toLowerCase().startsWith('/applications/caribou-');
-
-  // Check if current route is a learnwise page
-  const isLearnwisePage = location.pathname.toLowerCase().startsWith('/learnwiseq320') || location.pathname.toLowerCase().startsWith('/applications/learnwise-');
-  
-  // Conditional background classes
-  let backgroundClasses;
-  if (isAbsorbPage) {
-    backgroundClasses = "bg-[url('./assets/absorb.png')] sm:bg-[url('/src/assets/absorb.png')] lg:bg-[url('./assets/absorb.png')]";
-  } else if (isSparePage) {
-    backgroundClasses = "bg-[url('./assets/spare.png')] sm:bg-[url('/src/assets/spare.png')] lg:bg-[url('./assets/spare.png')]";
-  } else if (isClioPage) {
-    backgroundClasses = "bg-[url('./assets/clio.png')] sm:bg-[url('/src/assets/clio.png')] lg:bg-[url('./assets/clio.png')]";
-  } else if (isColabPage) {
-    backgroundClasses = "bg-[url('./assets/colab.png')] sm:bg-[url('/src/assets/colab.png')] lg:bg-[url('./assets/colab.png')]";
-  } else if (isHootsuitePage) {
-    backgroundClasses = "bg-[url('./assets/hootsuite.png')] sm:bg-[url('/src/assets/hootsuite.png')] lg:bg-[url('./assets/hootsuite.png')]";
-  } else if (isQuoPage) {
-    backgroundClasses = "bg-[url('./assets/backgroundquo.png')] sm:bg-[url('/src/assets/backgroundquo.png')] lg:bg-[url('/src/assets/backgroundquo.png')]";
-  } else if (isCaribouPage) {
-    backgroundClasses = "bg-[url('./assets/caribou.png')] sm:bg-[url('/src/assets/caribou.png')] lg:bg-[url('/src/assets/caribou.png')]";
-  } else if (isLearnwisePage) {
-    backgroundClasses = "bg-[url('./assets/learnwise.png')] sm:bg-[url('/src/assets/learnwise.png')] lg:bg-[url('/src/assets/learnwise.png')]";
-  } else {
-    backgroundClasses = "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
-  }
+  const pathname = location.pathname.toLowerCase();
+  const routeSlug = pathname.startsWith("/applications/")
+    ? location.pathname.split("/")[2]
+    : legacyApplicationRoutes[pathname]?.slug;
+  const currentApplication = applicationsBySlug[routeSlug];
+  const defaultBackground = currentApplication
+    ? ""
+    : "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
+  const applicationBackground = currentApplication
+    ? { backgroundImage: createGradient(currentApplication.theme.gradient) }
+    : undefined;
 
   return (
     <div
@@ -368,14 +339,29 @@ export default function App() {
         relative
         w-full min-h-screen
         bg-fixed bg-cover bg-center
-        ${backgroundClasses}
+        ${defaultBackground}
       `}
+      style={applicationBackground}
     >
       {/* ✅ Scroll to top on route change */}
       <ScrollToTop />
       
+      {currentApplication && (
+        <img
+          aria-hidden="true"
+          src={rennerPortrait}
+          alt=""
+          className="pointer-events-none fixed inset-y-0 right-0 h-full w-auto max-w-none select-none object-contain object-right"
+          style={{
+            filter: "grayscale(1) contrast(1.08)",
+            mixBlendMode: "luminosity",
+            opacity: currentApplication.theme.portraitOpacity,
+          }}
+        />
+      )}
+
       {/* ✅ Overlay for readability */}
-      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      <div className={`absolute inset-0 pointer-events-none ${currentApplication ? "bg-black/25" : "bg-black/40"}`} />
 
       {/* ✅ Foreground content */}
       <div className="relative z-10 flex flex-col min-h-screen">

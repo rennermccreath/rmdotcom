@@ -25,6 +25,12 @@ application record; reusable layout and behaviour belong in `DigitalApplication.
 Use `.github/prompts/create-digital-application.prompt.md` in VS Code agent mode to turn a job posting into
 a preflight summary, application configuration, and role-specific video scripts.
 
+## Background system
+
+Applications share `src/assets/renner-portrait.webp`, an untinted portrait with transparency. Each application
+supplies a `gradient` array and optional `portraitOpacity`; `App.jsx` generates the branded background in CSS.
+Do not create a flattened company background image. Add official brand colours to application data instead.
+
 ## Content guardrails
 
 - Preserve the job posting's exact company name and role title.
