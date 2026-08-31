@@ -332,10 +332,3 @@ button:focus-visible {
 .learnwise-glow-lg {
   filter: drop-shadow(0 0 20px #cf5148);
 }
-
-.learnwise-page {
-  background-image: url("./assets/learnwise.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}

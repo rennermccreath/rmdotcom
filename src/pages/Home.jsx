@@ -17,12 +17,6 @@ import FullPageCarousel from "../components/FullPageCarousel";
 import GridHome from "../components/GridHome";
 
 export default function Home() {
-  // Animation variants for cards
-  const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
     <section
       id="home"
