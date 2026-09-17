@@ -25,7 +25,9 @@ function createLegacyRoutes(prefix, welcomeSuffix = 1, lastSuffix = 8, firstSect
 }
 
 export function createApplication({ slug, company, role, accent, gradient, portraitOpacity = 0.52, welcomeVideo, whyVideo, legacyPrefix, legacyWelcomeSuffix = 1, legacyLastSuffix = 8, legacyFirstSectionIndex = 0, legacyWelcomePath }) {
-  const legacyRoutes = createLegacyRoutes(legacyPrefix, legacyWelcomeSuffix, legacyLastSuffix, legacyFirstSectionIndex);
+  const legacyRoutes = legacyPrefix
+    ? createLegacyRoutes(legacyPrefix, legacyWelcomeSuffix, legacyLastSuffix, legacyFirstSectionIndex)
+    : {};
   if (legacyWelcomePath) legacyRoutes[legacyWelcomePath] = "welcome";
   return {
     slug,

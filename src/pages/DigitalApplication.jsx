@@ -24,7 +24,7 @@ function SectionHeading({ children, accent }) {
 }
 
 function VideoSection({ section, application }) {
-  const video = normalizeVideo(section.videoUrl);
+  const video = section.videoUrl ? normalizeVideo(section.videoUrl) : null;
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-4 py-10 text-white">
@@ -36,7 +36,11 @@ function VideoSection({ section, application }) {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="aspect-video overflow-hidden rounded-lg border border-white/10 bg-black/60 shadow-2xl">
-          {["loom", "youtube", "vimeo"].includes(video.provider) ? (
+          {!video ? (
+            <div className="flex h-full items-center justify-center text-lg text-white/70">
+              Candidate video coming soon.
+            </div>
+          ) : ["loom", "youtube", "vimeo"].includes(video.provider) ? (
             <iframe
               src={video.embedUrl}
               title={`${application.company} ${application.role} candidate video`}

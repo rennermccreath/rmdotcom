@@ -25,6 +25,7 @@ for (const application of applications) {
   }
 
   for (const section of application.sections.filter(({ type }) => type === "video")) {
+    if (!section.videoUrl) continue;
     const video = normalizeVideo(section.videoUrl);
     if (!video.embedUrl && !video.src && !video.href) errors.push(`${application.company}/${section.id}: invalid video URL.`);
   }
