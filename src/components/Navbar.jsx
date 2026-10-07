@@ -78,7 +78,7 @@ import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaLinkedin, FaEnvelope, FaRss } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/RM.png";
+import logo from "../assets/Isolated black stag RM logo (1).png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,17 +101,17 @@ export default function Navbar() {
   return (
     <nav className="w-full backdrop-blur-md shadow-md px-6 py-1 flex items-center justify-between sticky top-0 z-50">
       {/* Left: Logo */}
-      <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-20 w-auto mr-3" />
-      </div>
+      <Link to="/" aria-label="Renner McCreath home" className="flex items-center">
+        <img src={logo} alt="RM stag logo" className="brand-logo mr-3 h-14 w-14 object-contain" />
+      </Link>
 
       {/* Desktop nav links */}
       <div className="hidden md:flex items-center">
         {!hidePrimaryLinks && (
           <div className="flex space-x-4">
-            <Link to="/" className="hover:text-[#c89116] transition-colors">Home</Link>
-            <Link to="/about" className="hover:text-[#c89116] transition-colors">About</Link>
-            <Link to="/work" className="hover:text-[#c89116] transition-colors">Work</Link>
+            <Link to="/" className="site-primary-link hover:text-[#c89116] transition-colors">Home</Link>
+            <Link to="/about" className="site-primary-link hover:text-[#c89116] transition-colors">About</Link>
+            <Link to="/work" className="site-primary-link hover:text-[#c89116] transition-colors">Work</Link>
           </div>
         )}
 
@@ -121,13 +121,13 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/rennermccreath/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+            className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
           >
             <FaLinkedin size={22} />
           </a>
           <a
             href="mailto:renner@rennermccreath.com"
-            className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+            className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
           >
             <FaEnvelope size={22} />
           </a>
@@ -135,7 +135,7 @@ export default function Navbar() {
             href="https://substack.com/@rennermccreath"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+            className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
           >
             <FaRss size={22} />
           </a>
@@ -146,7 +146,7 @@ export default function Navbar() {
       <div className="md:hidden flex items-center">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="hover:text-[#c89116] focus:outline-none"
+          className="site-menu-toggle hover:text-[#c89116] focus:outline-none"
         >
           {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
@@ -163,13 +163,13 @@ export default function Navbar() {
         <div className="flex flex-col items-center py-4 space-y-4">
           {!hidePrimaryLinks && (
             <>
-              <Link to="/" onClick={handleLinkClick} className="hover:text-[#c89116]">
+              <Link to="/" onClick={handleLinkClick} className="site-primary-link hover:text-[#c89116]">
                 Home
               </Link>
-              <Link to="/about" onClick={handleLinkClick} className="hover:text-[#c89116]">
+              <Link to="/about" onClick={handleLinkClick} className="site-primary-link hover:text-[#c89116]">
                 About
               </Link>
-              <Link to="/work" onClick={handleLinkClick} className="hover:text-[#c89116]">
+              <Link to="/work" onClick={handleLinkClick} className="site-primary-link hover:text-[#c89116]">
                 Work
               </Link>
             </>
@@ -181,13 +181,13 @@ export default function Navbar() {
               href="https://www.linkedin.com/in/rennermccreath/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+              className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
             >
               <FaLinkedin size={24} />
             </a>
             <a
               href="mailto:renner@rennermccreath.com"
-              className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+              className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
             >
               <FaEnvelope size={24} />
             </a>
@@ -195,7 +195,7 @@ export default function Navbar() {
               href="https://substack.com/@rennermccreath"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c89116] hover:text-[#e5a92e] transition-colors"
+              className="site-social-link text-[#c89116] hover:text-[#e5a92e] transition-colors"
             >
               <FaRss size={24} />
             </a>

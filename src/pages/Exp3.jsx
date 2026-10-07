@@ -5,8 +5,8 @@ import may2026 from "../assets/may2026.jpg";
 export default function Exp3() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-white">
-      <h2 className="text-4xl font-bold mb-4">Get the clipboard ready...</h2>
-      <h2 className="text-4xl font-bold mb-4 text-center">Assistant Coach/Uncle Aman reports for duty starting May 2026!</h2>
+      <h2 className="px-4 text-center text-2xl font-bold mb-4 sm:text-3xl md:text-4xl">Get the clipboard ready...</h2>
+      <h2 className="px-4 text-center text-2xl font-bold mb-4 sm:text-3xl md:text-4xl">Assistant Coach/Uncle Aman reports for duty starting May 2026!</h2>
       <motion.img
           src={may2026}
           alt="Logo"
