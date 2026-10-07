@@ -326,12 +326,9 @@ export default function App() {
     ? location.pathname.split("/")[2]
     : legacyApplicationRoutes[pathname]?.slug;
   const currentApplication = applicationsBySlug[routeSlug];
-  const defaultBackground = currentApplication
-    ? ""
-    : "bg-[url('./assets/background2.png')] sm:bg-[url('/src/assets/background2.png')] lg:bg-[url('./assets/background.jpg')]";
-  const applicationBackground = currentApplication
+  const backgroundImage = currentApplication
     ? { backgroundImage: createGradient(currentApplication.theme.gradient) }
-    : undefined;
+    : { backgroundImage: "linear-gradient(120deg, #101719 0%, #173C35 55%, #24545A 100%)" };
 
   return (
     <div
@@ -339,9 +336,9 @@ export default function App() {
         relative
         w-full min-h-screen
         bg-fixed bg-cover bg-center
-        ${defaultBackground}
+        ${currentApplication ? "application-site" : "personal-site"}
       `}
-      style={applicationBackground}
+      style={backgroundImage}
     >
       {/* ✅ Scroll to top on route change */}
       <ScrollToTop />
@@ -361,7 +358,7 @@ export default function App() {
       )}
 
       {/* ✅ Overlay for readability */}
-      <div className={`absolute inset-0 pointer-events-none ${currentApplication ? "bg-black/25" : "bg-black/40"}`} />
+      <div className={`absolute inset-0 pointer-events-none ${currentApplication ? "bg-black/25" : "bg-black/10"}`} />
 
       {/* ✅ Foreground content */}
       <div className="relative z-10 flex flex-col min-h-screen">
